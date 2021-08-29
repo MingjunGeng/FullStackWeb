@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset= "UTF-8">
+    <title>FlexBox Nesting </title>
+    <link rel = "stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+        }
+
+        .wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 50px;
+        }
+
+        img{
+            max-width: 100%;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            background: rgba(0,0,0,0.2);
+            padding: 20px 5px;
+        }
+        a:hover {
+            background: rgba(0,0,0,0.4);
+        }
+
+        /* our flex container */
+        .slider-nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            /*align-items: center;*/
+        }
+
+        /* our first flex item */
+        .slider-nav li {
+            flex: 2; /* This is flex item -ish  */
+            border: 1px solid red;
+            /*text-align: center;*/
+            /*align-items: center;*/
+            display: flex; /* This is flex container -ish */
+            text-align: center;
+        }
+        .slider-nav a {
+            display: flex;
+            flex-basis: 100%;
+            /*width: 100%;*/
+            align-items: center;
+        }
+        .slider-nav .arrow {       /*.slider-nav li:first-child,  */
+            border: 1px solid goldenrod;
+            /*align-items: center;*/
+            flex: 1;
+        }
+        .arrow a {
+            font-size: 30px;
+        }
+
+        /*.slider-nav a {*/
+        /*    flex-basis: 100%;*/
+        /*    display: flex;*/
+        /*    align-items: center;*/
+        /*    !* We want to stretch as well and center *!*/
+        /*}*/
+
+        /* This is the flex item */
+        .slider-nav span {
+            display: block;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class ="wrapper">
+
+    <div class="slider">
+        <img src="https://images.unsplash.com/photo-1626671395428-072bf23afccf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2134&q=80">
+    </div>
+    <nav class="slider-nav">
+        <ul>
+            <li class="arrow">
+                <a href="#"><span> &larr; </span></a>
+            </li>
+
+            <li>
+                <a href="#"><span> &#119065; Add a CLI to Node Apps with Vantage </span></a>
+            </li>
+
+            <li>
+                <a href="#"><span>New Sprint, Spectacles </span></a>
+            </li>
+
+            <li>
+                <a href="#"><span>Small Modules: Tales from a Serial Module Author </span></a>
+            </li>
+
+            <li>
+                <a href="#"><span>The End </span></a>
+            </li>
+
+            <li class="arrow">
+                <a href="#"><span> &rarr; </span></a>
+            </li>
+
+        </ul>
+    </nav>
+</div>
+
+
+
+</body>
+
+
+    <script src="jquery-3.6.0.min.js">
+
+
+    </script>
+</html>

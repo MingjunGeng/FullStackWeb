@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FlexBox Nav</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!--    <link rel="stylesheet" type="text/css" href="style.css">-->
+    <style>
+        /* Some CSS Setup - nothing to do with flexbox */
+        html{
+            box-sizing: border-box;
+        }
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+        /*.menu-icon{*/
+        /*    width: 0.9rem;*/
+        /*    height: 0.45rem;*/
+        /*    border-top: 0.1rem solid #ffffff;*/
+        /*    border-bottom:0.1rem solid #ffffff;*/
+        /*    background-color: #ffffff;*/
+        /*    padding: 0.1rem 0;*/
+        /*    margin-top:0.9rem;*/
+        /*    background-clip:content-box;*/
+        /*}*/
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+        }
+
+        a {
+            color: white;
+            font-weight: 100;
+            letter-spacing: 2px;
+            text-decoration: none;
+            background: rgba(0,0,0,0.2);
+            padding: 20px 5px;
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            transition: all 0.5s;
+        }
+        a:hover{
+            background: rgba(0,0,0,0.3);
+        }
+        .toggleNav {
+            display: none;
+        }
+        img {
+            width: 100%;
+        }
+
+        .wrapper{
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 50px;
+
+        }
+        input {
+            padding: 10px;
+            border: 0;
+        }
+        section, footer {
+            text-align: center;
+            background: rgba(0,0,0,0.2);
+            padding: 20px;
+            margin: 20px 0;
+            color: white;
+            font-weight: 100;
+        }
+        /* Flex Container */
+        .flex-nav ul {
+            border: 1px solid black;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        /* Flex Item */
+        .flex-nav li{
+            flex: 3;
+        }
+        .flex-nav .social{
+            flex: 1;
+        }
+        @media all and (max-width: 1000px){
+            .flex-nav ul{
+                flex-wrap: wrap;
+            }
+            .flex-nav li {
+                flex: 1 1 50%;
+            }
+            .flex-nav .social{
+                flex: 1 1 25%;
+            }
+        }
+        @media all and (max-width: 500px){
+            .flex-nav li{
+                flex-basis: 100%;
+            }
+            /* Flex Container */
+            .wrapper {
+                display: flex;
+                flex-direction: column;
+            }
+            /* Flex Item */
+            .wrapper > * {
+                order: 9999;
+            }
+
+            .flex-nav {
+                order: 1;
+            }
+
+            .toggleNav {
+                display: block;
+            }
+
+            .flex-nav ul {
+                display: none;
+            }
+
+            .flex-nav ul.open {
+                display: flex;
+            }
+
+            .top {
+                order: 2;
+            }
+
+            .details {
+                order: 3;
+            }
+            .signup {
+                order: 4;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <header class="top">
+        <h1><a href="#">What The Flexbox?!</a></h1>
+    </header>
+
+    <nav class="flex-nav">
+        <a href="#" class="toggleNav">&#8286; Menu</a>
+        <ul>
+            <li><a href="#">Item 01</a></li>
+            <li><a href="#">Item 02</a></li>
+            <li><a href="#">Item 03</a></li>
+            <li><a href="#">Item 04</a></li>
+            <li><a href="#">Item 05</a></li>
+            <li><a href="#">Item 06</a></li>
+
+            <li class="social"><a href="https://twitter.com/wesbos"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li class="social"><a href="https://www.facebook.com/wesbos.developer"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li class="social"><a href="https://github.com/wesbos"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            <li class="social"><a href="https://www.instagram.com/wesbos/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <img src="http://lorempixel.com/1000/600/abstract/">
+    </section>
+
+    <section class="details">
+        <p>A simple video course to help master FlexBox</p>
+        <p>Sign up today to grab all the videos and exercises!</p>
+    </section>
+
+    <section class="signup">
+        <form>
+            <input type="text" placeholder="You  name">
+            <input type="email" placeholder="Email address">
+            <input type="submit" placeholder="Sign me up!">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; Wes Bos</p>
+    </footer>
+</div>
+
+
+<script src="jquery-3.6.0.min.js">
+
+    // $(function () {
+    //     $( ".toggleNav" ).click(function() {
+    //        $( this ).toggleClass('open');
+    //    });
+    // });
+
+
+    $(function () {
+        $('.toggleNav').on('click', function () {
+            $('.flex-nav ul').toggleClass('open');
+            // $('.flex-nav ul').slideToggle();
+        });
+    });
+
+</script>
+</body>
+</html>
