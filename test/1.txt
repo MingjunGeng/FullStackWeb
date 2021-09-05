@@ -1,8 +1,6 @@
-# FullStackWeb
-
 1. What is Semantic HTML?
 
-Semantic HTML means HTML elements with a meaning.
+Semantic describe tags with meaning..
 
 2. What is HTML used for?
 
@@ -10,16 +8,19 @@ HTML is the language for describing the structure of Web pages.
 
 3. What is an attribute and where do we put it?
 
-Attributes provide additional information about an element.  Every name has some value that must be written within quotes
+All HTML elements can have attributes
+Attributes provide additional information about elements
+Attributes are always specified in the start tag
+Attributes usually come in name/value pairs like: name="value"
 
 4. What is the h1 tag used for? How many times should I use it on a page?
 
-H1 tags tell search engine bots and web users what a page is about. Every page needs only one H1 tag.
+H1 tags tell search engine bots and web users what a page is about. Every page needs only one H1 tag. H1 defines the most important heading.
 
 5. Name two tags that have required attributes
 
-	<img src= “”>
-	<a href = “”> </a>
+	<text area rows =”   “ cols = “ “ name =” “ required> < /text area>
+	<input type =“text”> </input>
 
 6. What do we put in the head of our HTML document?
 
@@ -27,7 +28,7 @@ The HTML <head> element is a container for the following elements: <title>, <sty
 
 7. What is an id?
 
-The id attribute specifies a unique id for an HTML element (the value must be unique within the HTML document).
+The id global attribute defines an identifier (ID) which must be unique in the whole document.
 
 8. What elements can I add an id to?
 
@@ -39,19 +40,19 @@ The HTML id attribute is used to specify a unique id for an HTML element. You ca
 
 10. What is a class?
 
-A CSS class is an attribute used to define a group of HTML elements in order to apply unique formatting to those elements in CSS.
+“class” selector can apply to multiple elements.
 
 11. What elements can I add a class to?
 
-You can add a class attribute to the HTML elements you want to style.
+Any HTML elements you want to style.
 
 12. How many times can I use the same class on a page?
 
-There is no technical limit
+No limit
 
 13. How do I get my link to open in a new tab?
 
-just add a target="_blank" attribute to your links (anchor tags).
+Add a target="_blank" attribute to your links (anchor tags).
 
 14. What is the alt attribute in the image tag used for?
 
@@ -59,20 +60,18 @@ An image with an alternate text specified.
 
 15. How do I reference an id?
 
-The syntax for id is: write a hash character (#), followed by an id name.
+write a hash character (#), followed by an id name.
 
 16. What is the difference between a section and a div
 
-<section> means that the content inside is grouped (i.e. relates to a single theme), and should appear as an entry in an outline of the page. <div> , on the other hand, does not convey any meaning, aside from any found in its class , lang and title attributes.
+<section> is Semantic HTML. <div> , on the other hand, does not convey any meaning.
 
 17. What is CSS used for?
 
-CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts.
+CSS is the language we use to style an HTML document. CSS describes how HTML elements should be displayed.
 
 18. How do we select an element? Example - every h2 on the page
-Elements are designators that define the structure and content of objects within a page.
-        The h2 element represents a level 2 heading. Headings (from h1 to h6) are titles that define implied sections in the document and arrange
-        its contents in a hierarchical structure.
+h2{}
 19. What is the difference between a class and an id? - Give me an example of when I might use each one
 
 id is used for single elements that appear on the page for only once (e.g. header, footer, menu), whereas class is used for single or multiple elements that appear on the page for once or more than once.
@@ -83,16 +82,17 @@ To select elements with a specific class, write a period (.) character, followed
 
 21. How do we select a p element with a single class of “human””?
 
-<p class = “human” > </p>
+p.human{}
 
 22. What is a parent child selector? When would this be useful?
 
-Child Selector is used to match all the elements which are child of a specified element. It gives the relation between two elements.
-        It is useful when defining the visual style and appearance of the elements with parents vs child relationship.
+The CSS child selector has two selectors separated by a > symbol.
+The first selector indicates the parent element.
+The second selector indicates the child element CSS will style.
 
 
 23. How do you select all links within a div with the class of sidebar?
- 	div .sidebar {}
+ 	div.sidebar {}
 
 24. What is a pseudo selector?
 
@@ -137,7 +137,7 @@ The * selector selects all elements do the job, for example: * { background-colo
 
 34. Why should I use version control?
 35. How often should I commit to github?
-
+    20minute
 36. What is the command we would use to push our repo up to github?
 	The git command : git push do the job. for example, git push -u origin main
 37. Walk me through Lambda's git flow.
@@ -152,7 +152,7 @@ The * selector selects all elements do the job, for example: * { background-colo
         8. Now I can work on the repo and start getting the project assignment done.
         9. To add and commit changes on the branch I can do the following
             . git add .
-            . git commit -m "the helpful commit message here"            
+            . git commit -m "the helpful commit message here"
         10. Push the changes back up to the Github repo
             . git push -u origin branch-name
         11. Now that the changes are on github prepare to submit a PR (Pull Request)
@@ -171,51 +171,3 @@ Stretch Questions
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width?
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
     5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them?
-
-
-Clone - The clone command downloads an existing Git repository to your local computer. You will then have a full-blown, local version of that Git repo and can start working on the project. Typically, the "original" repository is located on GitHub. That remote repository's URL is then later referred to as the "origin".
-
-Branch - A Git branch is essentially an independent line of development. You can take advantage of branching when working on new features or bug fixes because it isolates your work from that of other team members. Different branches can be merged into any one branch as long as they belong to the same repository.
-
-Commit - The commit command is used to save your changes to the local repository. Each commit will store the changes that have occurred since the last commit. This allows us to save our repository often so we don't lose work. But most importantly, we can go see the old versions of the files in our project and be able to turn back changes to a specific commit.
-
-Push - The git push command is used to upload local repository content to a remote repository. Pushing is how you transfer commits from your local repository to a remote repository.
-
-Pull - The git pull is a Git command used to update the local version of a repository from a remote. By default, git pull updates the current local working branch (currently checked out branch) and updates the remote tracking branches for all other branches.
-
-Merge - Merging is Git's way of putting a forked history back together again. The git merge command lets you take the independent lines of development created by git branch and integrate them into a single branch.
-
-Status - The git status command displays the state of the working directory and the staging area. It lets you see which changes have been staged, which haven't, and which files aren't being tracked by Git.
-
-
-
-```
-git pull
-
-git add .
-git commit -m "first commit"
-git push -u origin main
-or
-git add --all
-git commit -m "first commit"
-git push -u origin main
-```
-…or create a new repository on the command line
-
-echo "# FullStackWeb" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/sooof/FullStackWeb.git
-git push -u origin main
-
-
-…or push an existing repository from the command line
-
-git remote add origin https://github.com/sooof/FullStackWeb.git
-git branch -M main
-git push -u origin main
-
-…or import code from another repository
-You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
