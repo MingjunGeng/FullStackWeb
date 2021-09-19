@@ -252,3 +252,8 @@ console.log(badDefense(fifaData));
 var arr = [1, 2, 3];
 var max = Math.min(...arr);
 console.log(max);
+
+console.log('test test test');
+
+console.log(arr1.prototype);
+console.log(arr2.prototype);
