@@ -24,4 +24,6 @@ Show git branch name
 
 ```
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 ```
+

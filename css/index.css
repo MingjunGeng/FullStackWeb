@@ -1,0 +1,36 @@
+body {
+    margin: 0
+  }
+  
+  .wrapper {
+    display: flex;
+    height: 100vh;
+  }
+  
+  nav { 
+    flex: 0 0 auto;
+  }
+  
+  section {
+    flex: 1 1 auto;
+    overflow: auto;
+  }
+  
+  
+  /* Not important */
+  
+  body {
+    font-family: Georgia, sans-serif;
+  }
+  nav {
+    background: dodgerblue;
+    color: powderblue;
+  }
+  nav a {
+    color: aliceblue;
+  }
+  section {
+    padding: 0 1em;
+    color: #444;
+  }
+  
