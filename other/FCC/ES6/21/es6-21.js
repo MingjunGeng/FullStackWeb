@@ -18,5 +18,4 @@ class Book {
   novel.writer = 'newAuthor';
   console.log(novel.writer);
 
-  const JSX = <h1>Hello JSX!</h1>;
-  
+//   const JSX = <h1>Hello JSX!</h1>;
