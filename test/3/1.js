@@ -37,3 +37,4 @@ function max(a, b) {
 
 }
 console.log(max(15, 20));
+
