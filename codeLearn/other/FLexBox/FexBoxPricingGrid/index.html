@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset= "UTF-8">
+    <title>lexBox Pricing Grid </title>
+    <link rel = "stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* some CSS Setup - nothing to do with flexbox */
+        html {
+            box-sizing; border-box;
+        }
+
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+        
+        
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background-image: linear-gradient(260deg, #2376ae, 0%, #c16ecf 100%);
+        }
+
+        a {
+            color: white;
+        }
+
+        .plan ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .plan ul li {
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            padding: 10px;
+        }
+
+        .plan ul li:last-child {
+            border-bottom: 0;
+        }
+
+        .plan a{
+            text-decoration: 0;
+            background: #FEFF00;
+            padding: 10px;
+            color: black;
+            border-radius: 4px;
+        }
+
+
+        .plan h2 {
+            text-transform: uppercase;
+            color: white;letter
+        letter-spacing: 2px;
+            text-shadow: 3px 3px 0 rgba(0,0,0,0.1);
+        }
+
+        .price {
+            font-size: 50px;
+            font-family: serif;
+            margin: 10px 0;
+        }
+
+
+        /* flex container!!!  */
+        .pricing-grid {
+            max-width: 750px;
+            margin: 0 auto;
+            /*border: 1px solid red;*/
+            display: flex;
+            align-items: center;
+        }
+
+        .plan {
+            background: rgba(255,255,255,0.2);
+            margin: 20px;
+            padding: 20px;
+            border-radius: 4px;
+            text-align: center;
+
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .plan > * {
+            flex:1 100%;
+        }
+
+        .plan .cta {
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Flex Container -->
+<div class="pricing-grid">
+
+    <div class="plan plan1">
+
+        <h2> CAT </h2>
+        <p>Common, yet regarded by many as the worst house pet. </p>
+        <ul class="features">
+            <li>Scratches everything</li>
+            <li>Easily lost for days</li>
+            <li>Kind of a bummer</li>
+        </ul>
+
+        <p class="price"> free </p>
+
+        <a href="#" class="cta"> 🐱 Really? </a>
+    </div>
+
+    <div class="plan plan2">
+
+        <h2> DOG </h2>
+        <p>Loving, gentle and caring. Dogs are the best house pet to have and will increase happinese ten fold. </p>
+        <ul class="features">
+            <li>Super Fun</li>
+            <li>Friends love them</li>
+            <li>Play games</li>
+            <li>Not a cat</li>
+        </ul>
+
+        <p class="price"> $90 </p>
+
+        <a href="#" class="cta"> 🐶 Best deal → </a>
+    </div>
+
+    <div class="plan plan2">
+
+        <h2> FISH </h2>
+        <p>Cheap n' easy. </p>
+        <ul class="features">
+            <li>Eats flakes</li>
+            <li>Cop out</li>
+            <li>Replaceable</li>
+        </ul>
+
+        <p class="price"> $3 </p>
+
+        <a href="#" class="cta"> 🐠 </a>
+    </div>
+
+</div>
+
+
+</body>
+
+
+    <script src="jquery-3.6.0.min.js">
+
+
+    </script>
+</html>

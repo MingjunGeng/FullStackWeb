@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    /* color: #666; */
+  }
+  
+  .wrapper {
+    display: flex;
+    height: 100vh;
+  }
+  
+  nav { 
+    flex: 0 0 auto;
+  }
+  
+  section {
+    flex: 1 1 auto;
+    overflow: auto;
+  }
+  
+  
+  /* Not important */
+  
+  body {
+    font-family: Georgia, sans-serif;
+  }
+  nav {
+    /* background: dodgerblue; */
+    background: #ededed;
+    /* color: powderblue; */
+  }
+  ul.menu,ul.submenu {
+    background-color: #ededed;
+    list-style-type: none;
+    padding-left: 0px;
+  }
+  ul.menu::after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+  ul.menu > li {
+    width: 240px;
+    line-height: 3em;
+    height: 3em;
+    text-align: center;
+    cursor:pointer;
+    
+}
+ul.submenu {
+    /*默认隐藏*/
+    display: none;
+}
+
+ul.menu > li:hover {
+    background-color: #666;
+}
+ul.menu > li:hover > a {
+    color: #fff;
+}
+ul.menu > li:hover > ul.submenu {
+    display: block;
+    position:relative;
+    left: 240px;
+    top: -3em;
+}
+
+  nav a {
+    /* color: aliceblue; */
+    color: #666;
+  }
+
+  section {
+    padding: 0 1em;
+    color: #444;
+  }
+  
+  
