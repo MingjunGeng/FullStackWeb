@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState }  from 'react'
+
 import { render } from 'react-dom'
 
+// Named import
 import Playground from './components/Playground';
-import Happy from './components/Happy';
-
 /*
 💥💥💥 Rules when DECLARING a React component 💥💥💥
   - Name is capitalized
@@ -23,28 +23,34 @@ import Happy from './components/Happy';
   - Instead of passing args with parens, we pass them with attribute-like syntax
   - Don't forget all tags need to close correctly
 */
-// We can pass (and typically do!) multiple 'props'
-function App(props) {
-  const { cohort, instructor, week } = props;
 
-  const [happy, setHappy] = useState(false);
-
-  // JSX
+function App(props) {  
   return (
-    <div className="container">
-      <div className='container'>
-        <h1>Welcome to React, Web {cohort}</h1>
-        <Happy happy={happy} setHappy={setHappy} />
-        <div>It is week {week}</div>
-        <input type="text" />
-        <button>I'm a button!</button>
-        <Playground cohort={cohort} instructor={instructor} happy={happy}/>
-      </div>
+    <div className='container'>
+      <h1>Welcome to React, Web {props.cohort}</h1>
+      <p>Hello, {props.name}, you are {props.age}</p>
+      <div>It is week {props.week}</div>
+
+      {/* <Playground /> */}
+      {/* <Playground userLoggedIn = "false" /> */}
+      {/* <Playground userLoggedIn = "true" /> */}
+      <Playground userLoggedIn = {true} userLoggedOut = "" />
     </div>
   )
 }
 
 render(
-  <App cohort='46' instructor='Casey' week={2} />,
+  <App cohort='37' name = 'Casey' age = '74' week={2}/>,
   document.querySelector('#root')
 )
+/** 
+ *  props!!! -> data passed from one component to a child component
+ *  const props = {
+ *    cohort: '37',
+ *    name: 'Casey',
+ *    age: '74'
+ * }
+ * 
+ * 
+ * 
+*/
