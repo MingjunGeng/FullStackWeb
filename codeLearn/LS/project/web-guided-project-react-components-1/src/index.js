@@ -50,7 +50,4 @@ render(
  *    name: 'Casey',
  *    age: '74'
  * }
- * 
- * 
- * 
 */
