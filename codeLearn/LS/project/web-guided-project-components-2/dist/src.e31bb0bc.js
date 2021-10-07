@@ -1691,30 +1691,34 @@ module.exports = function mergeConfig(config1, config2) {
 
 },{"../utils":"../node_modules/axios/lib/utils.js"}],"../node_modules/axios/package.json":[function(require,module,exports) {
 module.exports = {
-  "_from": "axios",
+  "_args": [
+    [
+      "axios@0.21.4",
+      "/Users/raylea/Dropbox/Workspace/github/FullStackWeb/codeLearn/LS/project/web-guided-project-components-2"
+    ]
+  ],
+  "_from": "axios@0.21.4",
   "_id": "axios@0.21.4",
   "_inBundle": false,
   "_integrity": "sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==",
   "_location": "/axios",
   "_phantomChildren": {},
   "_requested": {
-    "type": "tag",
+    "type": "version",
     "registry": true,
-    "raw": "axios",
+    "raw": "axios@0.21.4",
     "name": "axios",
     "escapedName": "axios",
-    "rawSpec": "",
+    "rawSpec": "0.21.4",
     "saveSpec": null,
-    "fetchSpec": "latest"
+    "fetchSpec": "0.21.4"
   },
   "_requiredBy": [
-    "#USER",
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/axios/-/axios-0.21.4.tgz",
-  "_shasum": "c67b90dc0568e5c1cf2b0b858c43ba28e2eda575",
-  "_spec": "axios",
-  "_where": "/Users/raylea/Dropbox/Workspace/github/LambdaAssignments/web-guided-project-components-2",
+  "_spec": "0.21.4",
+  "_where": "/Users/raylea/Dropbox/Workspace/github/FullStackWeb/codeLearn/LS/project/web-guided-project-components-2",
   "author": {
     "name": "Matt Zabriskie"
   },
@@ -1724,7 +1728,6 @@ module.exports = {
   "bugs": {
     "url": "https://github.com/axios/axios/issues"
   },
-  "bundleDependencies": false,
   "bundlesize": [
     {
       "path": "./dist/axios.min.js",
@@ -1734,7 +1737,6 @@ module.exports = {
   "dependencies": {
     "follow-redirects": "^1.14.0"
   },
-  "deprecated": false,
   "description": "Promise based HTTP client for the browser and node.js",
   "devDependencies": {
     "coveralls": "^3.0.0",
@@ -2443,7 +2445,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49826" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50780" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
