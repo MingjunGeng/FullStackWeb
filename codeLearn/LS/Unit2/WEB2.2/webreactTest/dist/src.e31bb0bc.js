@@ -29785,6 +29785,18 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(n); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 // /**  Method 1 (props obj) START */
 // /* 
 //  * familiar prop transfer obj && {obj,obj}
@@ -29814,30 +29826,91 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //   rootElement
 //   );
 // /**  Method 1 (props obj) END */
+// /**  Method 2 (props obj) START */
+// /* 
+//  * familiar prop transfer obj && {obj1,obj2}
+//  * user child() get  obj1 or obj2
+// */
+// function Child(props){
+//   // const [user, setUser] = useState("");
+//   const {i}=props
+//   console.log("Child = ")
+//   console.log(props)
+// const JXS = (
+//   <div>
+//     <button >child {i}</button>
+//   </div>
+// );
+//   return JXS;
+// }
+// function App(props) {  
+//   console.log("APP = ")
+//   console.log(props)
+//   console.log(Object.keys(props.oobjs))
+//   for (const key in props.oobjs) {
+//       console.log(props.oobjs[key])
+//     }
+//     Object.keys(props.oobjs).map((key) => {
+//             //console.log(key)
+//             props.oobjs[key]
+//           })
+//     return(
+//       <div>
+//         <h1>Hello </h1>
+//         {
+//           // Object.key(props.oobjs).map((key) => {
+//           //   return <User obj = {props.oobjs[key]} />
+//           // })
+//           Object.keys(props.oobjs).map((key, i) => {
+//             return <Child obj = {props.oobjs[key] } i={i} />
+//             // props.oobjs[key]
+//           })
+//         }
+//       </div>
+//     );
+// }
+// const objs = {a:{cohort: '37', name: 'Casey', age: '74', week: 2}, c:{cohort: '55', name: 'ggg', age: '89', week: 5}}
+// const rootElement = document.getElementById("root");
+// ReactDOM.render(
+//   // <App cohort='37' name = 'Casey' age = '74' week={2}/>,
+//   <App oobjs ={objs}/>,
+//   rootElement
+//   );
+//   // /**  Method 2 (props obj) END */
 
-/**  Method 2 (props obj) START */
+/**  Method 3 (props obj) START */
 
 /* 
  * familiar prop transfer obj && {obj1,obj2}
  * user child() get  obj1 or obj2
+ * transfer method increase
 */
 function Child(props) {
   // const [user, setUser] = useState("");
-  var i = props.i;
-  console.log("Child = ");
-  console.log(props);
+  var i = props.i,
+      score = props.score,
+      increase = props.increase;
+  console.log("Child = ", i, props);
 
-  var JXS = /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("button", null, "child ", i));
+  var JXS = /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("button", {
+    onClick: increase
+  }, "child ", i, " Count:", score));
 
   return JXS;
 }
-/**  Method 1 (props obj) */
-
 
 function App(props) {
-  console.log("APP = ");
-  console.log(props);
+  console.log("APP = ", props);
   console.log(Object.keys(props.oobjs));
+
+  var _useState = (0, _react.useState)(0),
+      _useState2 = _slicedToArray(_useState, 2),
+      score = _useState2[0],
+      setScore = _useState2[1];
+
+  var increase = function increase() {
+    setScore(score + 1);
+  };
 
   for (var key in props.oobjs) {
     console.log(props.oobjs[key]);
@@ -29847,13 +29920,17 @@ function App(props) {
     //console.log(key)
     props.oobjs[key];
   });
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h1", null, "Hello "), // Object.key(props.oobjs).map((key) => {
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h1", null, "Hello "), /*#__PURE__*/_react.default.createElement("button", {
+    onClick: increase
+  }, "father  ", score), // Object.key(props.oobjs).map((key) => {
   //   return <User obj = {props.oobjs[key]} />
   // })
   Object.keys(props.oobjs).map(function (key, i) {
     return /*#__PURE__*/_react.default.createElement(Child, {
       obj: props.oobjs[key],
-      i: i
+      i: i,
+      score: score,
+      increase: increase
     }); // props.oobjs[key]
   }));
 }
@@ -29879,7 +29956,7 @@ _reactDom.default.render(
 // <App cohort='37' name = 'Casey' age = '74' week={2}/>,
 _react.default.createElement(App, {
   oobjs: objs
-}), rootElement);
+}), rootElement); // /**  Method 3 (props obj) END */
 },{"react-dom":"../node_modules/react-dom/index.js","react":"../node_modules/react/index.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -29908,7 +29985,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53464" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52468" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
