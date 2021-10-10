@@ -29785,47 +29785,77 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function User(props) {
-  // const [user, setUser] = useState("");
-  var id = props.id;
-  console.log("##" + id);
+// /**  Method 1 (props obj) START */
+// /* 
+//  * familiar prop transfer obj && {obj,obj}
+// */
+// function App(props) {  
+//   console.log("APP = ")
+//   console.log(props)
+//   console.log(Object.keys(props.oobjs))
+//   for (const key in props.oobjs) {
+//       console.log(props.oobjs[key])
+//     }
+//     Object.keys(props.oobjs).map((key) => {
+//             //console.log(key)
+//             props.oobjs[key]
+//           })
+//     return(
+//       <div>
+//         <h1>Hello</h1>
+//       </div>
+//     );
+// }
+// const objs = {a:{cohort: '37', name: 'Casey', age: '74', week: 2}, c:{cohort: '55', name: 'ggg', age: '89', week: 5}}
+// const rootElement = document.getElementById("root");
+// ReactDOM.render(
+//   // <App cohort='37' name = 'Casey' age = '74' week={2}/>,
+//   <App oobjs ={objs}/>,
+//   rootElement
+//   );
+// /**  Method 1 (props obj) END */
 
-  var JXS = /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("button", null, "Get User"));
+/**  Method 2 (props obj) START */
+
+/* 
+ * familiar prop transfer obj && {obj1,obj2}
+ * user child() get  obj1 or obj2
+*/
+function Child(props) {
+  // const [user, setUser] = useState("");
+  var i = props.i;
+  console.log("Child = ");
+  console.log(props);
+
+  var JXS = /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("button", null, "child ", i));
 
   return JXS;
-} // function App() {
-//   const [id, setId] = useState(1);
-// //  console.log( setId(9));
-//   const increment = id => {
-//     return setId(id+1)
-//   }
-//   return (
-//       <div className="app"> 
-//         <User id={id}/>
-//         <button onClick={function(){increment(id)}}>ccc</button>
-//       </div>
-//      )
-// }
+}
+/**  Method 1 (props obj) */
 
 
 function App(props) {
-  // const {cohort, name, age, week} =props
-  console.log(props.oobjs.a);
+  console.log("APP = ");
   console.log(props);
-  console.log(Object.keys(props.oobjs)); // props.map( (objs) => { 
-  //   return console.log(oobjs)
-  // }) 
-  // for (const key in props.oobjs) {
-  //   console.log(key)
-  // }
+  console.log(Object.keys(props.oobjs));
 
   for (var key in props.oobjs) {
     console.log(props.oobjs[key]);
   }
 
-  return /*#__PURE__*/_react.default.createElement("div", {
-    className: "container"
-  }, /*#__PURE__*/_react.default.createElement("h1", null, "Welcome to React, Web ", props.cohort), /*#__PURE__*/_react.default.createElement("p", null, "Hello, ", props.name, ", you are ", props.age), /*#__PURE__*/_react.default.createElement("div", null, "It is week ", props.week));
+  Object.keys(props.oobjs).map(function (key) {
+    //console.log(key)
+    props.oobjs[key];
+  });
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h1", null, "Hello "), // Object.key(props.oobjs).map((key) => {
+  //   return <User obj = {props.oobjs[key]} />
+  // })
+  Object.keys(props.oobjs).map(function (key, i) {
+    return /*#__PURE__*/_react.default.createElement(Child, {
+      obj: props.oobjs[key],
+      i: i
+    }); // props.oobjs[key]
+  }));
 }
 
 var objs = {
@@ -29849,95 +29879,7 @@ _reactDom.default.render(
 // <App cohort='37' name = 'Casey' age = '74' week={2}/>,
 _react.default.createElement(App, {
   oobjs: objs
-}), rootElement); // function User(props){
-//   // const [user, setUser] = useState("");
-//   const { id } = props
-//   console.log("##" + id)
-// const JXS = (
-//   <div>
-//     <button >Get User</button>
-//   </div>
-// );
-//   return JXS;
-// }
-// function App() {
-//   // const [id, setId] = useState(1);
-//   // const increment = id => {
-//   //   setId(id+1)
-//   // }
-//   return (
-//   <div className="app"> 
-//     {/* {
-//       <User id={id}/>
-//     } */}
-//     {/* <button onClick={e=>setId(id+1)}>
-//       Increment {id} to {id+1}
-//     </button> */}
-//     {/* <button onClick={e => increment(id)}>
-//       Increment {id} to {id+1}
-//     </button> */}
-//      </div>)
-// }
-// const rootElement = document.getElementById("root");
-// ReactDOM.render(
-//   <App />, 
-//   rootElement
-//   );
-// function App(props) {
-//   const {age, cohort, gender, name, allowLoggedIn } = props;
-//   console.log('props in APP: ', props);
-//   console.log('allowLoggedIn in APP: ', allowLoggedIn);
-//   console.log('age: ', name);
-//   console.log('gender: ', gender);  // undefined - NO ERROR !!!
-//   // console.log('sex: ', sex); //Uncaught ReferenceError: sex is not defined
-//   /*  document.createElement('div');
-//       elem.classList.add('container'); */   
-//   /* logout = () => {  } */
-//   /*
-//   if (allowLoggedIn) 
-//   return (   
-//     <div className='container'>
-//       <h1>Welcome to React, Web {props.cohort}</h1>
-//       <p>Hello, {props.name}, you are {props.age}, Your loggedIn Status: {props.allowLoggedIn} </p>
-//       <p>Hello, {name}, you are {age}, Your loggedIn Status: {allowLoggedIn}</p>
-//       <Playground loggedIn={true}  />
-//     </div>  )
-//   else return (
-//     <div className='container'>
-//       <h1>Welcome to React, Web {props.cohort}</h1>
-//       <p>Hello, {props.name}, you are Welcome to SigIn </p>
-//       <Playground loggedIn={false}  />
-//     </div> );
-//     */
-//   return (
-//     <div className='container'>
-//       {
-//         allowLoggedIn ? 
-//         <>
-//           <h1>Welcome to React, Web {props.cohort}</h1>
-//           <p> Hello, {props.name}, you are {props.age}, Your loggedIn Status: {props.allowLoggedIn ? 'allowed' : 'not allowed'} </p> 
-//           <p> {name}'s loggedIn Status: {allowLoggedIn ? 'allowed' : 'not allowed'}</p>
-//           {/* <Playground name ={name} loggedIn={allowLoggedIn} sex = {props.sex} age = {age}/>  */}
-//         </>  :
-//         <>
-//           <h1>Welcome to React, Web {props.cohort}</h1>
-//           <p> Hello, {props.name}, you are {props.age}, Your loggedIn Status: {props.allowLoggedIn ? 'allowed' : 'not allowed'} </p> 
-//           <p> {name}, Please SigIn to Enter Playground! </p>
-//           {/* <Playground name ={props.name} loggedIn={props.allowLoggedIn} sex = {props.sex} age = {props.age}/> */}
-//         </>
-//       }
-//     </div>
-//   )
-// }
-// const rootElement = document.getElementById("root");
-// ReactDOM.render(
-//   <App cohort='48' name='Rongjun' age = '74' sex = 'M' allowLoggedIn = {false}  />,
-//   rootElement
-//   );
-// // render(
-// //   <App cohort='48' name='Rongjun' age = '74' sex = 'M' allowLoggedIn = {false}  />,
-// //   document.querySelector('#root')
-// // )
+}), rootElement);
 },{"react-dom":"../node_modules/react-dom/index.js","react":"../node_modules/react/index.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -29966,7 +29908,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51342" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53464" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

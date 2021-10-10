@@ -7,6 +7,7 @@ find ./ -name  *.o -exec rm {} \;
 find ./ -name  a.out -exec rm {} \;
 find ./ -name 'node_modules' -type d -print -exec rm -rf {} \;
 find ./ -name '.cache' -type d -print -exec rm -rf {} \;
+find ./codeLearn -name  '.git' -type d -exec rm -rf {} \;
 echo -e "* > done !!!\n"
 exit 0;
 
