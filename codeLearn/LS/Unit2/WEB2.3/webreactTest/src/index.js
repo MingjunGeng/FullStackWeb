@@ -1,72 +1,44 @@
 
 import ReactDOM from "react-dom";
-import  { BrowserRouter as Router, Route, Link } from 'react-router-dom'
-import React, { useState, useEffect, Component } from "react";
+import  { BrowserRouter, Router, Route, Link } from 'react-router-dom'
+import React, { useState, useEffect, Component, useReducer } from "react";
 
 
+const users = [ 
+  {id: 1, name: 'Emily'},
+  {id: 2, name: 'Anna'},
+  {id: 3, name: 'Rory'},
+];
 
-function Home(props) {
-    return <h1>Home Component </h1>
-}
-function Blog(props) {
-  const {push} = props.history;
-  return( 
-    <>
-      <h1>Blog Component </h1>
-      <button onClick={()=>{ push("/")}} >back home </button>
-    </>
-    )
-}
+// const fetchUser = id => Promise.resolve(
+//   users.find(user => user.id == id
+// );
 
-function About(props) {
-  return <h1>About Component </h1>
-}
+const User = props => {
+  console.log("User ",props)
+  
+  const {id}  = props.match.params;
+  console.log("User id",id)
+  const user =users.find(usr => usr.id == id)
+  return <div> The id is {id}, the name is {user.name}</div>
+};
 
-function Contact(props) {
-  return <h1>Contact Component </h1>
-}
 
 function App() {
-  // const [id, setId] = useState(1);
+ 
 
-  // const increment = id => {
-  //   setId(id+1)
-  // }
 
   return (
     <div className="app"> 
-      <header className="App-header">
-        <Router>
-          <Link to='/'>Home </Link>
-          <Link to={{
-             pathname:'/blog',
-             search: '?name=gabe',
-             hash: '#thehash',
-             state: {
-               from: 'home page',
-            },
-            }}>Blog </Link>
-          {/* <Link to='/blog?name=gabe#thehash'>Blog </Link> */}
-          <Link to='/about'>About </Link>
-          <Link to='/contact'>Contact </Link>
+     <BrowserRouter>
+        <Link to='/users/1'>Users 1 </Link> <br/>
+        <Link to='/users/2'>Users 2 </Link> <br/>
+        <Link to='/users/3'>Users 3 </Link> <br/>
+        
+        <Route exact path='/users/:id' component={User}/>
+     </BrowserRouter>
+      <h1>hhhh</h1>
 
-          <Route exact path='/' component={Home}/>
-          <Route path='/blog' render={(props) => {
-            const {from} =props.location.state;
-            return (
-              <>
-              <h1>The Blog nobody reads! </h1>
-              <h1>You came from {from}! </h1>
-              </>
-            );
-          }} />
-          <Route path='/about' component={About}/>
-          <Route path='/contact' component={Contact}/>
-
-        </Router>
-
-        <h1>HH</h1>
-      </header>
     </div>)
 }
 

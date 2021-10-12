@@ -34029,68 +34029,43 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function Home(props) {
-  return /*#__PURE__*/_react.default.createElement("h1", null, "Home Component ");
-}
+var users = [{
+  id: 1,
+  name: 'Emily'
+}, {
+  id: 2,
+  name: 'Anna'
+}, {
+  id: 3,
+  name: 'Rory'
+}]; // const fetchUser = id => Promise.resolve(
+//   users.find(user => user.id == id
+// );
 
-function Blog(props) {
-  var push = props.history.push;
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("h1", null, "Blog Component "), /*#__PURE__*/_react.default.createElement("button", {
-    onClick: function onClick() {
-      push("/");
-    }
-  }, "back home "));
-}
-
-function About(props) {
-  return /*#__PURE__*/_react.default.createElement("h1", null, "About Component ");
-}
-
-function Contact(props) {
-  return /*#__PURE__*/_react.default.createElement("h1", null, "Contact Component ");
-}
+var User = function User(props) {
+  console.log("User ", props);
+  var id = props.match.params.id;
+  console.log("User id", id);
+  var user = users.find(function (usr) {
+    return usr.id == id;
+  });
+  return /*#__PURE__*/_react.default.createElement("div", null, " The id is ", id, ", the name is ", user.name);
+};
 
 function App() {
-  // const [id, setId] = useState(1);
-  // const increment = id => {
-  //   setId(id+1)
-  // }
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "app"
-  }, /*#__PURE__*/_react.default.createElement("header", {
-    className: "App-header"
   }, /*#__PURE__*/_react.default.createElement(_reactRouterDom.BrowserRouter, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
-    to: "/"
-  }, "Home "), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
-    to: {
-      pathname: '/blog',
-      search: '?name=gabe',
-      hash: '#thehash',
-      state: {
-        from: 'home page'
-      }
-    }
-  }, "Blog "), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
-    to: "/about"
-  }, "About "), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
-    to: "/contact"
-  }, "Contact "), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+    to: "/users/1"
+  }, "Users 1 "), " ", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    to: "/users/2"
+  }, "Users 2 "), " ", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    to: "/users/3"
+  }, "Users 3 "), " ", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     exact: true,
-    path: "/",
-    component: Home
-  }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
-    path: "/blog",
-    render: function render(props) {
-      var from = props.location.state.from;
-      return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("h1", null, "The Blog nobody reads! "), /*#__PURE__*/_react.default.createElement("h1", null, "You came from ", from, "! "));
-    }
-  }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
-    path: "/about",
-    component: About
-  }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
-    path: "/contact",
-    component: Contact
-  })), /*#__PURE__*/_react.default.createElement("h1", null, "HH")));
+    path: "/users/:id",
+    component: User
+  })), /*#__PURE__*/_react.default.createElement("h1", null, "hhhh"));
 }
 
 var rootElement = document.getElementById("root");
@@ -34124,7 +34099,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49783" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65122" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
