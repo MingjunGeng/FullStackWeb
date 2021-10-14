@@ -1,56 +1,25 @@
 
 import ReactDOM from "react-dom";
-import * as yup from 'yup'
 import  { BrowserRouter, Router, Route, Link } from 'react-router-dom'
 import React, { useState, useEffect, Component, useReducer } from "react";
 import axios from 'axios';
 
-const schema = yup.object().shape({
-  user: yup.string().required('user is required').min(6, 'user needs to be 6 char min'),
-  star: yup.string().oneOf(['wars', 'trek'], 'you must select a star'),
-  language: yup.string().oneOf(['1','2','3'], 'Yo must choose a language'),
-  agree: yup.boolean().oneOf([true], 'you must give away all your data')
-})
-const initForm = {
-  user: '',
-  star: '',
-  agree: false,
-  language: '', 
-}
+
 function App() {
- const [form, setForm] = useState(initForm)
- const [errors, setErrors] = useState({
-  user: '',
-  star: '',
-  agree: '',
-  language: '', 
-})
-const [disabled, setDisabled] = useState(true)
-
-const setFormErrors = (name, value) => {
-  yup.reach(schema, name).validate(value)
-    .then( () => setErrors( {...errors, [name]: ''}))
-    .catch(err => setErrors( {...errors, [name]: err.errors[0]} ))
-}
-
-useEffect( () =>{
-  schema.isValid(form).then(valid => setDisabled(!valid))
-},[form])
-
-
+ const [form, setForm] = useState({
+   user: '',
+   star: '',
+   agree: false,
+   language: '', 
+ })
  const change = event => {
   const {checked, value, name, type} = event.target
-  const valueToUse = type === 'checkbox' ? checked: value
-  setFormErrors(name, valueToUse)
+  const valueToUse = type === 'checkout' ? checked: value
   setForm({...form, [name]: valueToUse})
  }
-
   return (
     <div className="container"> 
     <h1>The name is , and the age is {}</h1>
-    <div style={ { color: 'red'}}> 
-      <div>{errors.user}</div> <div>{errors.star}</div> <div>{errors.agree}</div> <div>{errors.language}</div>
-    </div>
     <form > 
       <label >
       User
@@ -83,7 +52,7 @@ useEffect( () =>{
             <input 
             onChange={change}
             checked={form.agree}
-            // value='agree'
+            value='agree'
             name='agree'
             type='checkbox'/>
        </label><br/>
@@ -99,7 +68,7 @@ useEffect( () =>{
         </label><br/>
 
       <label >
-        <button disabled={disabled}>submit</button>
+        <button>send</button>
       </label>
 
     </form>

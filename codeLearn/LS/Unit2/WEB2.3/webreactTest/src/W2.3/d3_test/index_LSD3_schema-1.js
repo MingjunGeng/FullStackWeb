@@ -9,7 +9,7 @@ const schema = yup.object().shape({
   user: yup.string().required('user is required').min(6, 'user needs to be 6 char min'),
   star: yup.string().oneOf(['wars', 'trek'], 'you must select a star'),
   language: yup.string().oneOf(['1','2','3'], 'Yo must choose a language'),
-  agree: yup.boolean().oneOf([true], 'you must give away all your data')
+  agree: yup.boolean().oneOf([true], 'you must give away all your data'),
 })
 const initForm = {
   user: '',
@@ -18,11 +18,16 @@ const initForm = {
   language: '', 
 }
 function App() {
- const [form, setForm] = useState(initForm)
+ const [form, setForm] = useState({
+  user: '',
+  star: '',
+  agree: false,
+  language: '', 
+})
  const [errors, setErrors] = useState({
   user: '',
   star: '',
-  agree: '',
+  agree: false,
   language: '', 
 })
 const [disabled, setDisabled] = useState(true)
@@ -44,6 +49,24 @@ useEffect( () =>{
   setFormErrors(name, valueToUse)
   setForm({...form, [name]: valueToUse})
  }
+ const submit = event => {
+  event.preventDefault();
+  const newUser = {user: form.user, star: form.star, agree: form.agree, language: form.language}
+  axios.post('https://reqres.in/api/users', newUser)
+  .then(res => {
+    setForm({
+      user: '',
+      star: '',
+      agree: false,
+      language: '', 
+    })
+    //debugger
+  })
+  .catch(err => {
+   // debugger
+  })
+  // debugger
+ }
 
   return (
     <div className="container"> 
@@ -51,7 +74,7 @@ useEffect( () =>{
     <div style={ { color: 'red'}}> 
       <div>{errors.user}</div> <div>{errors.star}</div> <div>{errors.agree}</div> <div>{errors.language}</div>
     </div>
-    <form > 
+    <form onSubmit={submit}> 
       <label >
       User
       <input 
@@ -83,7 +106,7 @@ useEffect( () =>{
             <input 
             onChange={change}
             checked={form.agree}
-            // value='agree'
+            //value='agree'
             name='agree'
             type='checkbox'/>
        </label><br/>

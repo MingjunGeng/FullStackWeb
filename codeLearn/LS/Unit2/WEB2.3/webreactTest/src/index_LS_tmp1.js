@@ -11,18 +11,18 @@ const schema = yup.object().shape({
   language: yup.string().oneOf(['1','2','3'], 'Yo must choose a language'),
   agree: yup.boolean().oneOf([true], 'you must give away all your data')
 })
-const initForm = {
-  user: '',
-  star: '',
-  agree: false,
-  language: '', 
-}
+
 function App() {
- const [form, setForm] = useState(initForm)
+ const [form, setForm] = useState({
+   user: '',
+   star: '',
+   agree: false,
+   language: '', 
+ })
  const [errors, setErrors] = useState({
   user: '',
   star: '',
-  agree: '',
+  agree: false,
   language: '', 
 })
 const [disabled, setDisabled] = useState(true)
@@ -36,21 +36,14 @@ const setFormErrors = (name, value) => {
 useEffect( () =>{
   schema.isValid(form).then(valid => setDisabled(!valid))
 },[form])
-
-
  const change = event => {
   const {checked, value, name, type} = event.target
-  const valueToUse = type === 'checkbox' ? checked: value
-  setFormErrors(name, valueToUse)
+  const valueToUse = type === 'checkout' ? checked: value
   setForm({...form, [name]: valueToUse})
  }
-
   return (
     <div className="container"> 
     <h1>The name is , and the age is {}</h1>
-    <div style={ { color: 'red'}}> 
-      <div>{errors.user}</div> <div>{errors.star}</div> <div>{errors.agree}</div> <div>{errors.language}</div>
-    </div>
     <form > 
       <label >
       User
@@ -83,7 +76,7 @@ useEffect( () =>{
             <input 
             onChange={change}
             checked={form.agree}
-            // value='agree'
+            value='agree'
             name='agree'
             type='checkbox'/>
        </label><br/>
