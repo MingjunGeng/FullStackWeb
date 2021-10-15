@@ -26,7 +26,7 @@ export default function FriendForm(props) {
   return (
     <form className='form container' onSubmit={onSubmit}>
       <div className='form-group submit'>
-        <h2>Add a new Number</h2>
+        <h2>Add a Friend</h2>
 
         {/* 🔥 DISABLE THE BUTTON */}
         <button disabled={disabled}>submit</button>
@@ -43,77 +43,100 @@ export default function FriendForm(props) {
       <div className='form-group inputs'>
         <h4>General information</h4>
 
-  
-        {/* <label>Username&nbsp;
+        {/* ////////// TEXT INPUTS ////////// */}
+        {/* ////////// TEXT INPUTS ////////// */}
+        {/* ////////// TEXT INPUTS ////////// */}
+        <label>Username&nbsp;
           <input
             value={values.username}
             onChange={onChange}
             name='username'
             type='text'
           />
-        </label> */}
+        </label>
 
-        {/** Username */}
-        <label >
-            User
-            <input 
-                  onChange={change}
-                  value={values.username}
-                  name='username'
-                  type='text'/>
-            </label>
-            <br/>
-
-
-        {/* <label>Email
+        <label>Email
           <input
             value={values.email}
             onChange={onChange}
             name='email'
             type='text'
           />
-        </label> */}
+        </label>
 
-                  {/** Email */}
-                  <label >
-            Email
-            <input 
-                  onChange={change}
-                  value={values.email}
-                  name='email'
-                  type='text'/>
-            </label>
-            <br/>
+        {/* ////////// DROPDOWN ////////// */}
+        {/* ////////// DROPDOWN ////////// */}
+        {/* ////////// DROPDOWN ////////// */}
+        <label>Role
+          <select
+            onChange={onChange}
+            value={values.role}
+            name='role'
+          >
+            <option value=''>- Select an option -</option>
+            <option value='student'>Student</option>
+            <option value='alumni'>Alumni</option>
+            <option value='instructor'>Instructor</option>
+            <option value='tl'>Team Lead</option>
+          </select>
+        </label>
 
+        {/* ////////// RADIO BUTTONS ////////// */}
+        {/* ////////// RADIO BUTTONS ////////// */}
+        {/* ////////// RADIO BUTTONS ////////// */}
+        <label>Single
+        <input 
+            type="radio"
+            name="civil"
+            value="single"
+            onChange={onChange}
+            checked={values.civil === 'single'}
+          />
+        </label>
 
-          {/** Password */}
-            <label >
-            Password
-            <input 
-                  onChange={change}
-                  value={values.password}
-                  name='password'
-                  type='text'/>
-            </label>
-            <br/>
-            
-            {/**  Terms of Service (checkbox)  */}
-            <label >Terms of Service 
-                  <input 
-                  onChange={change}
-                  checked={values.agree}
-                  name='agree'
-                  type='checkbox'/>
-            </label><br/>
-  
-            {/**  A Submit button to send our form data to the server.  */}
-            <label >
-              <button disabled={disabled}>submit</button>
-            </label>
+        <label>Married
+        <input
+            type="radio"
+            name="civil"
+            value="married"
+            onChange={onChange}
+            checked={values.civil === 'married'}
+          />
+        </label>
+      </div>
 
+      <div className='form-group checkboxes'>
+        <h4>Hobbies</h4>
 
+        {/* ////////// CHECKBOXES ////////// */}
+        {/* ////////// CHECKBOXES ////////// */}
+        {/* ////////// CHECKBOXES ////////// */}
+        <label>Hiking
+        <input
+            type="checkbox"
+            name="hiking"
+            checked={values.hiking}
+            onChange={onChange}
+          />
+        </label>
 
+        <label>Reading
+          <input
+              type="checkbox"
+              name="reading"
+              checked={values.reading}
+              onChange={onChange}
+            />
+        </label>
 
+        <label>Coding
+          <input
+              type="checkbox"
+              name="coding"
+              checked={values.coding}
+              onChange={onChange}
+            />
+        </label>
       </div>
     </form>
   )

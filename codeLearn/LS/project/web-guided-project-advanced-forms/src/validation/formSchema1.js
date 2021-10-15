@@ -11,15 +11,12 @@ const formSchema = yup.object().shape({
         .string()
         .email('Must be a valid email address!')
         .required('Email is required!'),
-    role: yup
+    password: yup
         .string()
-        .oneOf(['instructor', 'student', 'alumni', 'tl'], 'Role is required!'),
-    civil: yup
-        .string()
-        .oneOf(['married', 'single'], 'Civil status is required!'),
-    coding: yup.boolean(),
-    reading: yup.boolean(),
-    hiking: yup.boolean()
+        .trim()
+        .required('Username is required!')
+        .min(3, 'Username  must be 3 characters long!'),
+    agree: yup.boolean()
 })
 
 export default formSchema;

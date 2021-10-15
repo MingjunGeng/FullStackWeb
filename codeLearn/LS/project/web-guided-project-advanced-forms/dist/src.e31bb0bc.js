@@ -7793,33 +7793,29 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-// const friends = [
-//   {
-//     id: uuid(),
-//     username: 'Michael',
-//     email: 'michael@michael.com',
-//     role: 'student',
-//     civil: 'single',
-//     hobbies: [
-//       'hiking',
-//       'reading',
-//       'coding',
-//     ],
-//   },
-// ]
 var friends = [{
   id: (0, _uuid.v4)(),
   username: 'Michael',
   email: 'michael@michael.com',
-  password: 'student',
-  agree: true
-}, {
-  id: (0, _uuid.v4)(),
-  username: 'Mic',
-  email: 'mic@michael.com',
-  password: 'student',
-  agree: true
-}];
+  role: 'student',
+  civil: 'single',
+  hobbies: ['hiking', 'reading', 'coding']
+}]; // const friends = [
+//     {
+//       id: uuid(),
+//       username: 'Michael',
+//       email: 'michael@michael.com',
+//       password: 'student',
+//       agree: true,
+//     },
+//     {
+//       id: uuid(),
+//       username: 'Mic',
+//       email: 'mic@michael.com',
+//       password: 'student',
+//       agree: true,
+//     }
+//   ]
 
 function getAllFriends(req, res, ctx) {
   return res(ctx.status(200), ctx.json(friends));
@@ -37565,7 +37561,11 @@ function Friend(_ref) {
 
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "friend container"
-  }, /*#__PURE__*/_react.default.createElement("h2", null, details.username), /*#__PURE__*/_react.default.createElement("p", null, "Email: ", details.email));
+  }, /*#__PURE__*/_react.default.createElement("h2", null, details.username), /*#__PURE__*/_react.default.createElement("p", null, "Email: ", details.email), /*#__PURE__*/_react.default.createElement("p", null, "Role: ", details.role), /*#__PURE__*/_react.default.createElement("p", null, "Civil: ", details.civil), !!details.hobbies && !!details.hobbies.length && /*#__PURE__*/_react.default.createElement("div", null, "Hobbies:", /*#__PURE__*/_react.default.createElement("ul", null, details.hobbies.map(function (like, idx) {
+    return /*#__PURE__*/_react.default.createElement("li", {
+      key: idx
+    }, like);
+  }))));
 }
 
 var _default = Friend;
@@ -37612,35 +37612,66 @@ function FriendForm(props) {
     onSubmit: onSubmit
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "form-group submit"
-  }, /*#__PURE__*/_react.default.createElement("h2", null, "Add a new Number"), /*#__PURE__*/_react.default.createElement("button", {
+  }, /*#__PURE__*/_react.default.createElement("h2", null, "Add a Friend"), /*#__PURE__*/_react.default.createElement("button", {
     disabled: disabled
   }, "submit"), /*#__PURE__*/_react.default.createElement("div", {
     className: "errors"
   }, /*#__PURE__*/_react.default.createElement("div", null, errors.username), /*#__PURE__*/_react.default.createElement("div", null, errors.email), /*#__PURE__*/_react.default.createElement("div", null, errors.role), /*#__PURE__*/_react.default.createElement("div", null, errors.civil))), /*#__PURE__*/_react.default.createElement("div", {
     className: "form-group inputs"
-  }, /*#__PURE__*/_react.default.createElement("h4", null, "General information"), /*#__PURE__*/_react.default.createElement("label", null, "User", /*#__PURE__*/_react.default.createElement("input", {
-    onChange: change,
+  }, /*#__PURE__*/_react.default.createElement("h4", null, "General information"), /*#__PURE__*/_react.default.createElement("label", null, "Username\xA0", /*#__PURE__*/_react.default.createElement("input", {
     value: values.username,
+    onChange: onChange,
     name: "username",
     type: "text"
-  })), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("label", null, "Email", /*#__PURE__*/_react.default.createElement("input", {
-    onChange: change,
+  })), /*#__PURE__*/_react.default.createElement("label", null, "Email", /*#__PURE__*/_react.default.createElement("input", {
     value: values.email,
+    onChange: onChange,
     name: "email",
     type: "text"
-  })), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("label", null, "Password", /*#__PURE__*/_react.default.createElement("input", {
-    onChange: change,
-    value: values.password,
-    name: "password",
-    type: "text"
-  })), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("label", null, "Terms of Service", /*#__PURE__*/_react.default.createElement("input", {
-    onChange: change,
-    checked: values.agree,
-    name: "agree",
-    type: "checkbox"
-  })), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("label", null, /*#__PURE__*/_react.default.createElement("button", {
-    disabled: disabled
-  }, "submit"))));
+  })), /*#__PURE__*/_react.default.createElement("label", null, "Role", /*#__PURE__*/_react.default.createElement("select", {
+    onChange: onChange,
+    value: values.role,
+    name: "role"
+  }, /*#__PURE__*/_react.default.createElement("option", {
+    value: ""
+  }, "- Select an option -"), /*#__PURE__*/_react.default.createElement("option", {
+    value: "student"
+  }, "Student"), /*#__PURE__*/_react.default.createElement("option", {
+    value: "alumni"
+  }, "Alumni"), /*#__PURE__*/_react.default.createElement("option", {
+    value: "instructor"
+  }, "Instructor"), /*#__PURE__*/_react.default.createElement("option", {
+    value: "tl"
+  }, "Team Lead"))), /*#__PURE__*/_react.default.createElement("label", null, "Single", /*#__PURE__*/_react.default.createElement("input", {
+    type: "radio",
+    name: "civil",
+    value: "single",
+    onChange: onChange,
+    checked: values.civil === 'single'
+  })), /*#__PURE__*/_react.default.createElement("label", null, "Married", /*#__PURE__*/_react.default.createElement("input", {
+    type: "radio",
+    name: "civil",
+    value: "married",
+    onChange: onChange,
+    checked: values.civil === 'married'
+  }))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "form-group checkboxes"
+  }, /*#__PURE__*/_react.default.createElement("h4", null, "Hobbies"), /*#__PURE__*/_react.default.createElement("label", null, "Hiking", /*#__PURE__*/_react.default.createElement("input", {
+    type: "checkbox",
+    name: "hiking",
+    checked: values.hiking,
+    onChange: onChange
+  })), /*#__PURE__*/_react.default.createElement("label", null, "Reading", /*#__PURE__*/_react.default.createElement("input", {
+    type: "checkbox",
+    name: "reading",
+    checked: values.reading,
+    onChange: onChange
+  })), /*#__PURE__*/_react.default.createElement("label", null, "Coding", /*#__PURE__*/_react.default.createElement("input", {
+    type: "checkbox",
+    name: "coding",
+    checked: values.coding,
+    onChange: onChange
+  }))));
 }
 },{"react":"../node_modules/react/index.js"}],"../node_modules/@babel/runtime/helpers/esm/extends.js":[function(require,module,exports) {
 "use strict";
@@ -48397,8 +48428,11 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 var formSchema = yup.object().shape({
   username: yup.string().trim().required('Username is required!').min(3, 'Username  must be 3 characters long!'),
   email: yup.string().email('Must be a valid email address!').required('Email is required!'),
-  password: yup.string().trim().required('Username is required!').min(3, 'Username  must be 3 characters long!'),
-  agree: yup.boolean()
+  role: yup.string().oneOf(['instructor', 'student', 'alumni', 'tl'], 'Role is required!'),
+  civil: yup.string().oneOf(['married', 'single'], 'Civil status is required!'),
+  coding: yup.boolean(),
+  reading: yup.boolean(),
+  hiking: yup.boolean()
 });
 var _default = formSchema;
 exports.default = _default;
@@ -50425,7 +50459,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61021" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54490" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

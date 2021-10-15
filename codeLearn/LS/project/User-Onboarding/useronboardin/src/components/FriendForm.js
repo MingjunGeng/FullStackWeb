@@ -3,15 +3,27 @@ import React from 'react'
 
 
 
-function NumberForm(props){
+function FriendForm(props){
     const {
       values,
-     // submit,
+     submit,
       change,
       disabled,
       errors,
     } = props
-  
+    const onSubmit = evt => {
+      evt.preventDefault()
+      submit()
+    }
+
+    const onChange = evt => {
+      /* 🔥 FIX THIS SO IT ALSO WORKS WITH CHECKBOXES */
+      const { name, value, checked, type } = evt.target
+      console.log(evt.target) 
+      console.log(evt.target.value)
+      const valueToUse = type === 'checkbox' ? checked : value;
+      change(name, valueToUse)
+    }
   
   
     return (
@@ -19,32 +31,43 @@ function NumberForm(props){
           <div style={ { color: 'red'}}> 
             <div>{errors.username}</div> <div>{errors.email}</div> <div>{errors.agree}</div> <div>{errors.password}</div>
           </div>
-          <form > 
+          <form   onSubmit={onSubmit}> 
+          <h2>Add a Friend</h2>
             {/** Username */}
+
+            {
+                      <div className='errors'>
+                      {/* 🔥 RENDER THE VALIDATION ERRORS HERE */}
+                      <div>{errors.username}</div>
+                      <div>{errors.email}</div>
+                      <div>{errors.role}</div>
+                      <div>{errors.civil}</div>
+                    </div>
+            }
             <label >
             User
             <input 
-                  onChange={change}
+                  onChange={onChange}
                   value={values.username}
                   name='username'
                   type='text'/>
             </label>
             <br/>
-          {/** Email */}
+            {/** Email */}
             <label >
             Email
             <input 
-                  onChange={change}
+                  onChange={onChange}
                   value={values.email}
                   name='email'
                   type='text'/>
             </label>
             <br/>
-          {/** Password */}
+            {/** Password */}
             <label >
             Password
             <input 
-                  onChange={change}
+                  onChange={onChange}
                   value={values.password}
                   name='password'
                   type='text'/>
@@ -54,7 +77,7 @@ function NumberForm(props){
             {/**  Terms of Service (checkbox)  */}
             <label >Terms of Service 
                   <input 
-                  onChange={change}
+                  onChange={onChange}
                   checked={values.agree}
                   name='agree'
                   type='checkbox'/>
@@ -71,4 +94,5 @@ function NumberForm(props){
   }
 
 
-export default NumberForm
+export default FriendForm
+``

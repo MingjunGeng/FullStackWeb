@@ -7793,29 +7793,33 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+// const friends = [
+//   {
+//     id: uuid(),
+//     username: 'Michael',
+//     email: 'michael@michael.com',
+//     role: 'student',
+//     civil: 'single',
+//     hobbies: [
+//       'hiking',
+//       'reading',
+//       'coding',
+//     ],
+//   },
+// ]
 var friends = [{
   id: (0, _uuid.v4)(),
   username: 'Michael',
   email: 'michael@michael.com',
-  role: 'student',
-  civil: 'single',
-  hobbies: ['hiking', 'reading', 'coding']
-}]; // const friends = [
-//     {
-//       id: uuid(),
-//       username: 'Michael',
-//       email: 'michael@michael.com',
-//       password: 'student',
-//       agree: true,
-//     },
-//     {
-//       id: uuid(),
-//       username: 'Mic',
-//       email: 'mic@michael.com',
-//       password: 'student',
-//       agree: true,
-//     }
-//   ]
+  password: 'student',
+  agree: true
+}, {
+  id: (0, _uuid.v4)(),
+  username: 'Mic',
+  email: 'mic@michael.com',
+  password: 'student',
+  agree: true
+}];
 
 function getAllFriends(req, res, ctx) {
   return res(ctx.status(200), ctx.json(friends));
@@ -50073,34 +50077,58 @@ var _react = _interopRequireDefault(require("react"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function NumberForm(props) {
+function FriendForm(props) {
   var values = props.values,
+      submit = props.submit,
       change = props.change,
       disabled = props.disabled,
       errors = props.errors;
+
+  var onSubmit = function onSubmit(evt) {
+    evt.preventDefault();
+    submit();
+  };
+
+  var onChange = function onChange(evt) {
+    /* 🔥 FIX THIS SO IT ALSO WORKS WITH CHECKBOXES */
+    var _evt$target = evt.target,
+        name = _evt$target.name,
+        value = _evt$target.value,
+        checked = _evt$target.checked,
+        type = _evt$target.type;
+    console.log(evt.target);
+    console.log(evt.target.value);
+    var valueToUse = type === 'checkbox' ? checked : value;
+    change(name, valueToUse);
+  };
+
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "container"
   }, /*#__PURE__*/_react.default.createElement("div", {
     style: {
       color: 'red'
     }
-  }, /*#__PURE__*/_react.default.createElement("div", null, errors.username), " ", /*#__PURE__*/_react.default.createElement("div", null, errors.email), " ", /*#__PURE__*/_react.default.createElement("div", null, errors.agree), " ", /*#__PURE__*/_react.default.createElement("div", null, errors.password)), /*#__PURE__*/_react.default.createElement("form", null, /*#__PURE__*/_react.default.createElement("label", null, "User", /*#__PURE__*/_react.default.createElement("input", {
-    onChange: change,
+  }, /*#__PURE__*/_react.default.createElement("div", null, errors.username), " ", /*#__PURE__*/_react.default.createElement("div", null, errors.email), " ", /*#__PURE__*/_react.default.createElement("div", null, errors.agree), " ", /*#__PURE__*/_react.default.createElement("div", null, errors.password)), /*#__PURE__*/_react.default.createElement("form", {
+    onSubmit: onSubmit
+  }, /*#__PURE__*/_react.default.createElement("h2", null, "Add a Friend"), /*#__PURE__*/_react.default.createElement("div", {
+    className: "errors"
+  }, /*#__PURE__*/_react.default.createElement("div", null, errors.username), /*#__PURE__*/_react.default.createElement("div", null, errors.email), /*#__PURE__*/_react.default.createElement("div", null, errors.role), /*#__PURE__*/_react.default.createElement("div", null, errors.civil)), /*#__PURE__*/_react.default.createElement("label", null, "User", /*#__PURE__*/_react.default.createElement("input", {
+    onChange: onChange,
     value: values.username,
     name: "username",
     type: "text"
   })), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("label", null, "Email", /*#__PURE__*/_react.default.createElement("input", {
-    onChange: change,
+    onChange: onChange,
     value: values.email,
     name: "email",
     type: "text"
   })), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("label", null, "Password", /*#__PURE__*/_react.default.createElement("input", {
-    onChange: change,
+    onChange: onChange,
     value: values.password,
     name: "password",
     type: "text"
   })), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("label", null, "Terms of Service", /*#__PURE__*/_react.default.createElement("input", {
-    onChange: change,
+    onChange: onChange,
     checked: values.agree,
     name: "agree",
     type: "checkbox"
@@ -50109,7 +50137,7 @@ function NumberForm(props) {
   }, "submit"))));
 }
 
-var _default = NumberForm;
+var _default = FriendForm;
 exports.default = _default;
 },{"react":"../node_modules/react/index.js"}],"components/Friend.js":[function(require,module,exports) {
 "use strict";
@@ -50132,7 +50160,7 @@ function Friend(_ref) {
 
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "friend container"
-  });
+  }, /*#__PURE__*/_react.default.createElement("h2", null, details.username), /*#__PURE__*/_react.default.createElement("p", null, "Email: ", details.email));
 }
 
 var _default = Friend;
@@ -50160,6 +50188,14 @@ function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
@@ -50236,35 +50272,36 @@ function App() {
     var valueToUse = type === 'checkbox' ? checked : value;
     setFormErrors(name, valueToUse);
     setFriends(_objectSpread(_objectSpread({}, friends), {}, _defineProperty({}, name, valueToUse)));
-  }; // const getFriends = () => {
-  //   axios.get('http://buddies.com/api/friends')
-  //   .then(res => {
-  //     console.log("App.js: res.data = ", res.data)
-  //     setNumber(res.data);
-  //   }).catch(err => console.error(err))
-  // }
-  // const postNewFriend = newFriend => {
-  //   axios.post('http://buddies.com/api/friends', newFriend)
-  //   .then(res => {
-  //     setFriends([res.data, ...form]);
-  //    // setFormValues(initialFormValues);
-  //   }).catch(err => {
-  //     console.error(err);
-  //    // setFormValues(initialFormValues);
-  //   }).finally( ()=>{
-  //    // setFormValues(initialFormValues);
-  //   })
-  // }
-
+  };
 
   var getFriends = function getFriends() {
-    // 🔥 STEP 5- IMPLEMENT! ON SUCCESS PUT FRIENDS IN STATE
-    //    helper to [GET] all friends from `http://buddies.com/api/friends`
     _axios.default.get('http://buddies.com/api/friends').then(function (res) {
       console.log("App.js: res.data = ", res.data);
-      setFriends(res.data); // setFriends(res.data);
+      setFriends(res.data);
     }).catch(function (err) {
       return console.error(err);
+    });
+  };
+
+  var formSubmit = function formSubmit() {
+    var newFriend = {
+      username: formValues.username.trim(),
+      email: formValues.email.trim(),
+      role: formValues.role.trim(),
+      civil: formValues.civil.trim(),
+      // 🔥 STEP 7- WHAT ABOUT HOBBIES?
+      hobbies: formValues.agree
+    };
+    console.log("App.js newFriend = ", newFriend);
+    postNewFriend(newFriend); // 🔥 STEP 8- POST NEW FRIEND USING HELPER
+  };
+
+  var postNewFriend = function postNewFriend(newFriend) {
+    _axios.default.post('http://buddies.com/api/friends', newFriend).then(function (res) {
+      setFriends([res.data].concat(_toConsumableArray(form))); // setFormValues(initialFormValues);
+    }).catch(function (err) {
+      console.error(err); // setFormValues(initialFormValues);
+    }).finally(function () {// setFormValues(initialFormValues);
     });
   }; // const postNewFriend = newFriend => {
   //   // 🔥 STEP 6- IMPLEMENT! ON SUCCESS ADD NEWLY CREATED FRIEND TO STATE
@@ -50287,10 +50324,15 @@ function App() {
     className: "container"
   }, /*#__PURE__*/_react.default.createElement("h1", null, "User Onboarding"), /*#__PURE__*/_react.default.createElement(_FriendForm.default, {
     values: friends,
-    change: change // submit={formSubmit}
-    ,
+    change: change,
+    submit: formSubmit,
     disabled: disabled,
     errors: errors
+  }), friends.map(function (friend) {
+    return /*#__PURE__*/_react.default.createElement(_Friend.default, {
+      key: friend.id,
+      details: friend
+    });
   }));
 }
 
@@ -50342,7 +50384,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59246" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63629" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

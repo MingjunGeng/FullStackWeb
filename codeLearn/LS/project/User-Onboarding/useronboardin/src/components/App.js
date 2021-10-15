@@ -52,38 +52,43 @@ function App() {
    setFriends({...friends, [name]: valueToUse})
   }
 
-  // const getFriends = () => {
-  //   axios.get('http://buddies.com/api/friends')
-  //   .then(res => {
-  //     console.log("App.js: res.data = ", res.data)
-  //     setNumber(res.data);
-  //   }).catch(err => console.error(err))
-  // }
-
-  // const postNewFriend = newFriend => {
-  //   axios.post('http://buddies.com/api/friends', newFriend)
-  //   .then(res => {
-
-  //     setFriends([res.data, ...form]);
-  //    // setFormValues(initialFormValues);
-  //   }).catch(err => {
-  //     console.error(err);
-  //    // setFormValues(initialFormValues);
-  //   }).finally( ()=>{
-  //    // setFormValues(initialFormValues);
-  //   })
-  // }
- 
   const getFriends = () => {
-    // 🔥 STEP 5- IMPLEMENT! ON SUCCESS PUT FRIENDS IN STATE
-    //    helper to [GET] all friends from `http://buddies.com/api/friends`
     axios.get('http://buddies.com/api/friends')
     .then(res => {
       console.log("App.js: res.data = ", res.data)
       setFriends(res.data)
-      // setFriends(res.data);
     }).catch(err => console.error(err))
   }
+
+  const formSubmit = () => {
+    const newFriend = {
+      username: formValues.username.trim(),
+      email: formValues.email.trim(),
+      role: formValues.role.trim(),
+      civil: formValues.civil.trim(),
+      // 🔥 STEP 7- WHAT ABOUT HOBBIES?
+      hobbies: formValues.agree
+    }
+    console.log("App.js newFriend = ", newFriend)
+    postNewFriend(newFriend);
+    // 🔥 STEP 8- POST NEW FRIEND USING HELPER
+  }
+
+  const postNewFriend = newFriend => {
+    axios.post('http://buddies.com/api/friends', newFriend)
+    .then(res => {
+
+      setFriends([res.data, ...form]);
+     // setFormValues(initialFormValues);
+    }).catch(err => {
+      console.error(err);
+     // setFormValues(initialFormValues);
+    }).finally( ()=>{
+     // setFormValues(initialFormValues);
+    })
+  }
+ 
+
   // const postNewFriend = newFriend => {
   //   // 🔥 STEP 6- IMPLEMENT! ON SUCCESS ADD NEWLY CREATED FRIEND TO STATE
   //   //    helper to [POST] `newFriend` to `http://buddies.com/api/friends`
@@ -109,19 +114,19 @@ function App() {
       <FriendForm
         values={friends}
         change={change}
-        // submit={formSubmit}
+       submit={formSubmit}
         disabled={disabled}
         errors={errors}
       />
   
       
-        {/* {
+        {
           friends.map(friend => {
           return (
             <Friend key={friend.id} details={friend} />
           )
         })
-      } */}
+      }
 
     </div>
   );

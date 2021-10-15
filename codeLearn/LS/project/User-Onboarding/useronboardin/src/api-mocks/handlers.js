@@ -2,37 +2,37 @@
 import { rest } from 'msw'
 import { v4 as uuid } from 'uuid'
 
-const friends = [
-  {
-    id: uuid(),
-    username: 'Michael',
-    email: 'michael@michael.com',
-    role: 'student',
-    civil: 'single',
-    hobbies: [
-      'hiking',
-      'reading',
-      'coding',
-    ],
-  },
-]
-
 // const friends = [
-//     {
-//       id: uuid(),
-//       username: 'Michael',
-//       email: 'michael@michael.com',
-//       password: 'student',
-//       agree: true,
-//     },
-//     {
-//       id: uuid(),
-//       username: 'Mic',
-//       email: 'mic@michael.com',
-//       password: 'student',
-//       agree: true,
-//     }
-//   ]
+//   {
+//     id: uuid(),
+//     username: 'Michael',
+//     email: 'michael@michael.com',
+//     role: 'student',
+//     civil: 'single',
+//     hobbies: [
+//       'hiking',
+//       'reading',
+//       'coding',
+//     ],
+//   },
+// ]
+
+const friends = [
+    {
+      id: uuid(),
+      username: 'Michael',
+      email: 'michael@michael.com',
+      password: 'student',
+      agree: true,
+    },
+    {
+      id: uuid(),
+      username: 'Mic',
+      email: 'mic@michael.com',
+      password: 'student',
+      agree: true,
+    }
+  ]
 
 function getAllFriends(req, res, ctx) {
   return res(
