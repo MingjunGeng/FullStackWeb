@@ -8,6 +8,7 @@ import FriendForm from './FriendForm'
 import schema from '../validation/formSchema';
 import axios from 'axios';
 import * as yup from 'yup';
+import { v4 as uuid } from 'uuid'
 
 
 //////////////// INITIAL STATES ////////////////
@@ -35,6 +36,13 @@ const initialFormErrors = {
 const initialFriends = []
 const initialDisabled = true
 
+import data from './data'
+
+function fetchStock() {
+  // fetchStock simulates getting data through axios.get(<URL>)
+  return Promise.resolve({ success: true, data })
+}
+
 
 export default function App() {
   //////////////// STATES ////////////////
@@ -45,28 +53,42 @@ export default function App() {
   const [formErrors, setFormErrors] = useState(initialFormErrors) // object
   const [disabled, setDisabled] = useState(initialDisabled)       // boolean
 
+
+
+
+
+
+
+  useEffect(() => {
+    fetchStock().then(res => setFriends(res.data))
+  }, [])
+  
+  console.log("App stock = ", friends)
+
+
   //////////////// HELPERS ////////////////
   //////////////// HELPERS ////////////////
   //////////////// HELPERS ////////////////
-  const getFriends = () => {
-    // 🔥 STEP 5- IMPLEMENT! ON SUCCESS PUT FRIENDS IN STATE
-    //    helper to [GET] all friends from `http://buddies.com/api/friends`
-    axios.get('http://buddies.com/api/friends')
-    .then(res => {
-      console.log("App.js: res.data = ", res.data)
-      setFriends(res.data);
-    }).catch(err => console.error(err))
-  }
+  // const getFriends = () => {
+  //   // 🔥 STEP 5- IMPLEMENT! ON SUCCESS PUT FRIENDS IN STATE
+  //   //    helper to [GET] all friends from `http://buddies.com/api/friends`
+  //   axios.get('http://buddies.com/api/friends')
+  //   .then(res => {
+  //     console.log("App.js: GET --- res.data = ", res.data)
+  //     setFriends(res.data);
+  //   }).catch(err => console.error(err))
+  // }
 
   const postNewFriend = newFriend => {
     // 🔥 STEP 6- IMPLEMENT! ON SUCCESS ADD NEWLY CREATED FRIEND TO STATE
     //    helper to [POST] `newFriend` to `http://buddies.com/api/friends`
     //    and regardless of success or failure, the form should reset
-    axios.post('http://buddies.com/api/friends', newFriend)
+    axios.post('https://reqres.in/api/friends', newFriend)
     .then(res => {
 
       setFriends([res.data, ...friends]);
-      setFormValues(initialFormValues);
+     // setFormValues(initialFormValues);
+      console.log("App.js: post --- res.data = ", res.data)
     }).catch(err => {
       console.error(err);
       setFormValues(initialFormValues);
@@ -112,9 +134,9 @@ export default function App() {
   //////////////// SIDE EFFECTS ////////////////
   //////////////// SIDE EFFECTS ////////////////
   //////////////// SIDE EFFECTS ////////////////
-  useEffect(() => {
-    getFriends()
-  }, [])
+  // useEffect(() => {
+  //   getFriends()
+  // }, [])
 
   useEffect(() => {
     // 🔥 STEP 9- ADJUST THE STATUS OF `disabled` EVERY TIME `formValues` CHANGES

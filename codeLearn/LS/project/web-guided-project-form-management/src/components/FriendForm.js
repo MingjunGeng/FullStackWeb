@@ -2,12 +2,12 @@ import React from 'react'
 
 export default function FriendForm(props) {
   // THESE ARE THE **EXACT PROPS** FriendForm EXPECTS!!!
-  const { values, update, submit } = props
+  const { values, update, submit, errorText } = props
 
   const onChange = evt => {
     // 🔥 STEP 6 - IMPLEMENT the change handler for our inputs and dropdown
     // a) pull the name of the input from the event object
-    const name = evt.name
+    const name = evt.target.name
     // b) pull the value of the input from the event object
     const value = evt.target.value;
     // c) use the `update` callback coming in through props
@@ -24,7 +24,7 @@ export default function FriendForm(props) {
 
   return (
     <form className='form container' onSubmit={onSubmit}>
-      
+      <h2 className="error">{errorText}</h2>
       <div className='form-group inputs'>
         {/* ////////// TEXT INPUTS ////////// */}
         {/* ////////// TEXT INPUTS ////////// */}
@@ -34,15 +34,14 @@ export default function FriendForm(props) {
               Controlled inputs need `value` and `onChange` props.
               Inputs render what they're told - their current value comes from app state.
               At each keystroke, a change handler fires to change app state. */}
-            <input 
-            type='text'
-            name='usename' 
-            value={values.useername}
+         <input
+            type="text"
+            name="username"
+            value={values.username}
             onChange={onChange}
-            maxLength='30'
-            placeholder="Enter a username chump"
-            />
-
+            maxLength="30"
+            placeholder="Enter a username ya chump"
+          />
         </label>
 
         <label>Email
@@ -50,7 +49,7 @@ export default function FriendForm(props) {
           <input
             type="email"
             name="email"
-            //value={values.email}
+            value={values.email}
             onChange={onChange}
             placeholder="Enter an email ya chump"
           />

@@ -28324,12 +28324,13 @@ function FriendForm(props) {
   // THESE ARE THE **EXACT PROPS** FriendForm EXPECTS!!!
   var values = props.values,
       update = props.update,
-      submit = props.submit;
+      submit = props.submit,
+      errorText = props.errorText;
 
   var onChange = function onChange(evt) {
     // 🔥 STEP 6 - IMPLEMENT the change handler for our inputs and dropdown
     // a) pull the name of the input from the event object
-    var name = evt.name; // b) pull the value of the input from the event object
+    var name = evt.target.name; // b) pull the value of the input from the event object
 
     var value = evt.target.value; // c) use the `update` callback coming in through props
 
@@ -28347,19 +28348,21 @@ function FriendForm(props) {
   return /*#__PURE__*/_react.default.createElement("form", {
     className: "form container",
     onSubmit: onSubmit
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, /*#__PURE__*/_react.default.createElement("h2", {
+    className: "error"
+  }, errorText), /*#__PURE__*/_react.default.createElement("div", {
     className: "form-group inputs"
   }, /*#__PURE__*/_react.default.createElement("label", null, "Username", /*#__PURE__*/_react.default.createElement("input", {
     type: "text",
-    name: "usename",
-    value: values.useername,
+    name: "username",
+    value: values.username,
     onChange: onChange,
     maxLength: "30",
-    placeholder: "Enter a username chump"
+    placeholder: "Enter a username ya chump"
   })), /*#__PURE__*/_react.default.createElement("label", null, "Email", /*#__PURE__*/_react.default.createElement("input", {
     type: "email",
-    name: "email" //value={values.email}
-    ,
+    name: "email",
+    value: values.email,
     onChange: onChange,
     placeholder: "Enter an email ya chump"
   })), /*#__PURE__*/_react.default.createElement("label", null, "Role", /*#__PURE__*/_react.default.createElement("select", {
@@ -29403,6 +29406,14 @@ function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return 
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
@@ -29474,8 +29485,9 @@ function SimpleForm() {
     var newPet = {
       petName: formValues.petName.trim(),
       petType: formValues.petType.trim()
-    };
-    setPets(pets.concat(newPet));
+    }; // setPets(pets.concat(newPet));
+
+    setPets([newPet].concat(_toConsumableArray(pets)));
     setFormValues(initialFormValues);
   };
 
@@ -29535,7 +29547,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50685" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63005" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

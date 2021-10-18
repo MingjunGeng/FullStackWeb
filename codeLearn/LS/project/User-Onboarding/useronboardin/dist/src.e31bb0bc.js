@@ -50108,11 +50108,9 @@ function FriendForm(props) {
     style: {
       color: 'red'
     }
-  }, /*#__PURE__*/_react.default.createElement("div", null, errors.username), " ", /*#__PURE__*/_react.default.createElement("div", null, errors.email), " ", /*#__PURE__*/_react.default.createElement("div", null, errors.agree), " ", /*#__PURE__*/_react.default.createElement("div", null, errors.password)), /*#__PURE__*/_react.default.createElement("form", {
+  }), /*#__PURE__*/_react.default.createElement("form", {
     onSubmit: onSubmit
-  }, /*#__PURE__*/_react.default.createElement("h2", null, "Add a Friend"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "errors"
-  }, /*#__PURE__*/_react.default.createElement("div", null, errors.username), /*#__PURE__*/_react.default.createElement("div", null, errors.email), /*#__PURE__*/_react.default.createElement("div", null, errors.role), /*#__PURE__*/_react.default.createElement("div", null, errors.civil)), /*#__PURE__*/_react.default.createElement("label", null, "User", /*#__PURE__*/_react.default.createElement("input", {
+  }, /*#__PURE__*/_react.default.createElement("h2", null, "Add a Friend"), /*#__PURE__*/_react.default.createElement("label", null, "User", /*#__PURE__*/_react.default.createElement("input", {
     onChange: onChange,
     value: values.username,
     name: "username",
@@ -50231,20 +50229,20 @@ var initForm = {
 var initialFriends = [];
 
 function App() {
-  var _useState = (0, _react.useState)(initForm),
+  var _useState = (0, _react.useState)(initialFriends),
       _useState2 = _slicedToArray(_useState, 2),
-      errors = _useState2[0],
-      setErrors = _useState2[1];
+      friends = _useState2[0],
+      setFriends = _useState2[1];
 
-  var _useState3 = (0, _react.useState)(true),
+  var _useState3 = (0, _react.useState)(initForm),
       _useState4 = _slicedToArray(_useState3, 2),
-      disabled = _useState4[0],
-      setDisabled = _useState4[1];
+      errors = _useState4[0],
+      setErrors = _useState4[1];
 
-  var _useState5 = (0, _react.useState)(initialFriends),
+  var _useState5 = (0, _react.useState)(true),
       _useState6 = _slicedToArray(_useState5, 2),
-      friends = _useState6[0],
-      setFriends = _useState6[1];
+      disabled = _useState6[0],
+      setDisabled = _useState6[1];
 
   var setFormErrors = function setFormErrors(name, value) {
     yup.reach(schema, name).validate(value).then(function () {
@@ -50303,22 +50301,7 @@ function App() {
       console.error(err); // setFormValues(initialFormValues);
     }).finally(function () {// setFormValues(initialFormValues);
     });
-  }; // const postNewFriend = newFriend => {
-  //   // 🔥 STEP 6- IMPLEMENT! ON SUCCESS ADD NEWLY CREATED FRIEND TO STATE
-  //   //    helper to [POST] `newFriend` to `http://buddies.com/api/friends`
-  //   //    and regardless of success or failure, the form should reset
-  //   axios.post('http://buddies.com/api/friends', newFriend)
-  //   .then(res => {
-  //     setFriends([res.data, ...friends]);
-  //     setForm(initForm);
-  //   }).catch(err => {
-  //     console.error(err);
-  //     setForm(initForm);
-  //   }).finally( ()=>{
-  //     setForm(initForm);
-  //   })
-  // }
-
+  };
 
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "container"
@@ -50384,7 +50367,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63629" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58929" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

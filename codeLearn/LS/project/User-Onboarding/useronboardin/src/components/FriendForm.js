@@ -29,20 +29,20 @@ function FriendForm(props){
     return (
       <div className="container">
           <div style={ { color: 'red'}}> 
-            <div>{errors.username}</div> <div>{errors.email}</div> <div>{errors.agree}</div> <div>{errors.password}</div>
+            {/* <div>{errors.username}</div> <div>{errors.email}</div> <div>{errors.agree}</div> <div>{errors.password}</div> */}
           </div>
           <form   onSubmit={onSubmit}> 
           <h2>Add a Friend</h2>
             {/** Username */}
 
             {
-                      <div className='errors'>
-                      {/* 🔥 RENDER THE VALIDATION ERRORS HERE */}
-                      <div>{errors.username}</div>
-                      <div>{errors.email}</div>
-                      <div>{errors.role}</div>
-                      <div>{errors.civil}</div>
-                    </div>
+                    //   <div className='errors'>
+                    //   {/* 🔥 RENDER THE VALIDATION ERRORS HERE */}
+                    //   <div>{errors.username}</div>
+                    //   <div>{errors.email}</div>
+                    //   <div>{errors.role}</div>
+                    //   <div>{errors.civil}</div>
+                    // </div>
             }
             <label >
             User
@@ -95,4 +95,3 @@ function FriendForm(props){
 
 
 export default FriendForm
-``

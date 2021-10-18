@@ -50220,7 +50220,31 @@ module.exports.default = axios;
 
 },{"./utils":"../node_modules/axios/lib/utils.js","./helpers/bind":"../node_modules/axios/lib/helpers/bind.js","./core/Axios":"../node_modules/axios/lib/core/Axios.js","./core/mergeConfig":"../node_modules/axios/lib/core/mergeConfig.js","./defaults":"../node_modules/axios/lib/defaults.js","./cancel/Cancel":"../node_modules/axios/lib/cancel/Cancel.js","./cancel/CancelToken":"../node_modules/axios/lib/cancel/CancelToken.js","./cancel/isCancel":"../node_modules/axios/lib/cancel/isCancel.js","./helpers/spread":"../node_modules/axios/lib/helpers/spread.js"}],"../node_modules/axios/index.js":[function(require,module,exports) {
 module.exports = require('./lib/axios');
-},{"./lib/axios":"../node_modules/axios/lib/axios.js"}],"components/App.js":[function(require,module,exports) {
+},{"./lib/axios":"../node_modules/axios/lib/axios.js"}],"components/data/index.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+// Data from https://www.uncommongoods.com/fun/by-interest/geek-gifts
+var _default = [{
+  id: 0,
+  username: 'Michael',
+  email: 'michael@michael.com',
+  role: 'student',
+  civil: 'single',
+  hobbies: ['hiking', 'reading', 'coding']
+}, {
+  id: 1,
+  username: 'Michael',
+  email: 'michael@michael.com',
+  role: 'student',
+  civil: 'single',
+  hobbies: ['hiking', 'reading', 'coding']
+}];
+exports.default = _default;
+},{}],"components/App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -50239,6 +50263,10 @@ var _formSchema = _interopRequireDefault(require("../validation/formSchema"));
 var _axios = _interopRequireDefault(require("axios"));
 
 var yup = _interopRequireWildcard(require("yup"));
+
+var _uuid = require("uuid");
+
+var _data = _interopRequireDefault(require("./data"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -50297,6 +50325,14 @@ var initialFormErrors = {
 var initialFriends = [];
 var initialDisabled = true;
 
+function fetchStock() {
+  // fetchStock simulates getting data through axios.get(<URL>)
+  return Promise.resolve({
+    success: true,
+    data: _data.default
+  });
+}
+
 function App() {
   //////////////// STATES ////////////////
   //////////////// STATES ////////////////
@@ -50323,29 +50359,34 @@ function App() {
       _useState8 = _slicedToArray(_useState7, 2),
       disabled = _useState8[0],
       setDisabled = _useState8[1]; // boolean
-  //////////////// HELPERS ////////////////
-  //////////////// HELPERS ////////////////
-  //////////////// HELPERS ////////////////
 
 
-  var getFriends = function getFriends() {
-    // 🔥 STEP 5- IMPLEMENT! ON SUCCESS PUT FRIENDS IN STATE
-    //    helper to [GET] all friends from `http://buddies.com/api/friends`
-    _axios.default.get('http://buddies.com/api/friends').then(function (res) {
-      console.log("App.js: res.data = ", res.data);
-      setFriends(res.data);
-    }).catch(function (err) {
-      return console.error(err);
+  (0, _react.useEffect)(function () {
+    fetchStock().then(function (res) {
+      return setFriends(res.data);
     });
-  };
+  }, []);
+  console.log("App stock = ", friends); //////////////// HELPERS ////////////////
+  //////////////// HELPERS ////////////////
+  //////////////// HELPERS ////////////////
+  // const getFriends = () => {
+  //   // 🔥 STEP 5- IMPLEMENT! ON SUCCESS PUT FRIENDS IN STATE
+  //   //    helper to [GET] all friends from `http://buddies.com/api/friends`
+  //   axios.get('http://buddies.com/api/friends')
+  //   .then(res => {
+  //     console.log("App.js: GET --- res.data = ", res.data)
+  //     setFriends(res.data);
+  //   }).catch(err => console.error(err))
+  // }
 
   var postNewFriend = function postNewFriend(newFriend) {
     // 🔥 STEP 6- IMPLEMENT! ON SUCCESS ADD NEWLY CREATED FRIEND TO STATE
     //    helper to [POST] `newFriend` to `http://buddies.com/api/friends`
     //    and regardless of success or failure, the form should reset
-    _axios.default.post('http://buddies.com/api/friends', newFriend).then(function (res) {
-      setFriends([res.data].concat(_toConsumableArray(friends)));
-      setFormValues(initialFormValues);
+    _axios.default.post('https://reqres.in/api/friends', newFriend).then(function (res) {
+      setFriends([res.data].concat(_toConsumableArray(friends))); // setFormValues(initialFormValues);
+
+      console.log("App.js: post --- res.data = ", res.data);
     }).catch(function (err) {
       console.error(err);
       setFormValues(initialFormValues);
@@ -50387,11 +50428,11 @@ function App() {
   }; //////////////// SIDE EFFECTS ////////////////
   //////////////// SIDE EFFECTS ////////////////
   //////////////// SIDE EFFECTS ////////////////
+  // useEffect(() => {
+  //   getFriends()
+  // }, [])
 
 
-  (0, _react.useEffect)(function () {
-    getFriends();
-  }, []);
   (0, _react.useEffect)(function () {
     // 🔥 STEP 9- ADJUST THE STATUS OF `disabled` EVERY TIME `formValues` CHANGES
     _formSchema.default.isValid(formValues).then(function (valid) {
@@ -50413,7 +50454,7 @@ function App() {
     });
   }));
 }
-},{"react":"../node_modules/react/index.js","./Friend":"components/Friend.js","./FriendForm":"components/FriendForm.js","../validation/formSchema":"validation/formSchema.js","axios":"../node_modules/axios/index.js","yup":"../node_modules/yup/es/index.js"}],"index.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./Friend":"components/Friend.js","./FriendForm":"components/FriendForm.js","../validation/formSchema":"validation/formSchema.js","axios":"../node_modules/axios/index.js","yup":"../node_modules/yup/es/index.js","uuid":"../node_modules/uuid/dist/esm-browser/index.js","./data":"components/data/index.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _browser = require("./api-mocks/browser");
@@ -50459,7 +50500,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54490" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52420" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

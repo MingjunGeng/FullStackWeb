@@ -27,10 +27,11 @@ const initialFriends = []
 
 
 function App() {
-  const [errors, setErrors] = useState(initForm)
- const [disabled, setDisabled] = useState(true)
+
  const [friends, setFriends] = useState(initialFriends)     
- 
+ const [errors, setErrors] = useState(initForm)
+ const [disabled, setDisabled] = useState(true)
+
  const setFormErrors = (name, value) => {
    yup.reach(schema, name).validate(value)
      .then( () => setErrors( {...errors, [name]: ''}))
@@ -89,22 +90,6 @@ function App() {
   }
  
 
-  // const postNewFriend = newFriend => {
-  //   // 🔥 STEP 6- IMPLEMENT! ON SUCCESS ADD NEWLY CREATED FRIEND TO STATE
-  //   //    helper to [POST] `newFriend` to `http://buddies.com/api/friends`
-  //   //    and regardless of success or failure, the form should reset
-  //   axios.post('http://buddies.com/api/friends', newFriend)
-  //   .then(res => {
-
-  //     setFriends([res.data, ...friends]);
-  //     setForm(initForm);
-  //   }).catch(err => {
-  //     console.error(err);
-  //     setForm(initForm);
-  //   }).finally( ()=>{
-  //     setForm(initForm);
-  //   })
-  // }
 
 
   return (
@@ -113,10 +98,10 @@ function App() {
 
       <FriendForm
         values={friends}
-        change={change}
-       submit={formSubmit}
-        disabled={disabled}
-        errors={errors}
+         change={change}
+        submit={formSubmit}
+         disabled={disabled}
+         errors={errors}
       />
   
       

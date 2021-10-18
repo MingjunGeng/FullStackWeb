@@ -14,7 +14,7 @@ function App() {
  })
  const change = event => {
   const {checked, value, name, type} = event.target
-  const valueToUse = type === 'checkout' ? checked: value
+  const valueToUse = type === 'checkbox' ? checked: value
   setForm({...form, [name]: valueToUse})
  }
   return (
