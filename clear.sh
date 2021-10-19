@@ -1,6 +1,8 @@
 #!/bin/bash
 
-echo -e "1 > del .DS_store.\n"
+echo -e "1 > del link file.\n"
+rm codeLearn/LS/LSchoolProject
+echo -e "2 > del .DS_store.\n"
 find ./ -name .DS_Store  -exec rm {} \;
 find ./ -name .gitignore  -exec rm {} \;
 find ./ -name  *.exe -exec rm {} \;
