@@ -29772,16 +29772,21 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":"../node_modules/react-dom/cjs/react-dom.development.js"}],"index.js":[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":"../node_modules/react-dom/cjs/react-dom.development.js"}],"components/Playground.js":[function(require,module,exports) {
 "use strict";
 
-var _reactDom = require("react-dom");
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
@@ -29795,37 +29800,161 @@ function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
-function Hero() {
-  var _useState = (0, _react.useState)(100),
+function Playground(props) {
+  //1
+  // const myarr = useState(0);
+  // console.log(myarr);
+  // const [userLoggedIn, setUserLoggedIn] = useState(true);
+  var _useState = (0, _react.useState)(0),
       _useState2 = _slicedToArray(_useState, 2),
-      healthPoints = _useState2[0],
-      setHealthPoints = _useState2[1];
+      count = _useState2[0],
+      setCount = _useState2[1];
 
-  var _useState3 = (0, _react.useState)(true),
+  var _useState3 = (0, _react.useState)(false),
       _useState4 = _slicedToArray(_useState3, 2),
-      isHappy = _useState4[0],
-      setIsHappy = _useState4[1]; // const eatGreat = e => {
-  //   setHealthPoints(healthPoints + 20);
-  // };
+      spinnerOn = _useState4[0],
+      setSpinnerOn = _useState4[1];
+
+  var _useState5 = (0, _react.useState)('scissors'),
+      _useState6 = _slicedToArray(_useState5, 2),
+      choice = _useState6[0],
+      setChoice = _useState6[1]; // console.log(count);
 
 
-  var eatTerrible = function eatTerrible(e) {
-    setHealthPoints(healthPoints - 20);
-    setIsHappy(false);
-  };
+  console.log(props);
+  console.log(_typeof(props));
+  console.log(_typeof(props.userLoggedIn));
+  console.log(props.userLoggedIn + '');
+  console.log(_typeof(props.userLoggedIn + ''));
+  console.log(_typeof(props.userLoggedIn == 'ture'));
+  console.log(props.userLoggedIn + '');
+  console.log(props.userLoggedIn == 'ture'); // console.log(typeof(true))
+  // console.log(typeof('true'))
 
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", null, "Health Points: ", /*#__PURE__*/_react.default.createElement("span", null, healthPoints)), /*#__PURE__*/_react.default.createElement("div", null, isHappy ? 'Really Happy' : 'Having a bad day'), /*#__PURE__*/_react.default.createElement("button", {
-    onClick: function onClick(e) {
-      return setHealthPoints(healthPoints + 20);
-    }
-  }, "Have a great meal"), /*#__PURE__*/_react.default.createElement("button", {
-    onClick: eatTerrible
-  }, "Have a terrible meal"));
+  console.log(props.userLoggedIn);
+
+  if (spinnerOn) {
+    return /*#__PURE__*/_react.default.createElement("div", {
+      className: "container"
+    }, /*#__PURE__*/_react.default.createElement("h3", null, "The spinner is ", spinnerOn ? 'ON' : 'OFF', "."), /*#__PURE__*/_react.default.createElement("button", {
+      onClick: function onClick() {
+        return setSpinnerOn(false);
+      }
+    }, "Turn off spinnerOn "), /*#__PURE__*/_react.default.createElement("button", {
+      onClick: function onClick() {
+        return setSpinnerOn(!spinnerOn);
+      }
+    }, "Toggle spinner..."));
+  }
+
+  return (
+    /*#__PURE__*/
+    // <div className={(props.userLoggedIn+'') ? "container" :  "non-container"}>
+    //<div className={props.userLoggedIn=='ture' ? "container" :  "non-container"}>
+    // use eval string to boolean
+    //<div className="container" >
+    _react.default.createElement("div", {
+      className: eval(props.userLoggedIn) ? "container" : "non-container"
+    }, /*#__PURE__*/_react.default.createElement("h1", null, "Welcome to the playground!"), eval(props.userLoggedIn) ? /*#__PURE__*/_react.default.createElement("button", null, "Log out") : /*#__PURE__*/_react.default.createElement("button", null, "Log In"), /*#__PURE__*/_react.default.createElement("p", null, "The current count is: ", count), /*#__PURE__*/_react.default.createElement("button", {
+      onClick: function onClick() {
+        return setCount(count + 1);
+      }
+    }, "Increase"), /*#__PURE__*/_react.default.createElement("button", {
+      onClick: function onClick() {
+        return setCount(count - 1);
+      }
+    }, "Decrease"), /*#__PURE__*/_react.default.createElement("button", {
+      onClick: function onClick() {
+        return setSpinnerOn(true);
+      }
+    }, "Turn on Spinnah"), /*#__PURE__*/_react.default.createElement("h3", null, "The current weapon is ", choice), /*#__PURE__*/_react.default.createElement("button", {
+      onClick: function onClick() {
+        return setChoice('scissors');
+      }
+    }, "pick scissors"), /*#__PURE__*/_react.default.createElement("button", {
+      onClick: function onClick() {
+        return setChoice('rock');
+      }
+    }, "pick rock"), /*#__PURE__*/_react.default.createElement("button", {
+      onClick: function onClick() {
+        return setChoice('paper');
+      }
+    }, "pick paper"))
+  );
+} // TERNARY FUN
+// if (a) {
+//   name = "Casey";
+// } else {
+//   name = "Robert";
+// }
+// name = a ? "Casey" : "Robert";
+
+
+var _default = Playground;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js"}],"index.js":[function(require,module,exports) {
+"use strict";
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _reactDom = require("react-dom");
+
+var _Playground = _interopRequireDefault(require("./components/Playground"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+// Named import
+
+/*
+💥💥💥 Rules when DECLARING a React component 💥💥💥
+  - Name is capitalized
+  - Takes an object ("props") as its one argument
+  - Must return SOMETHING (null, empty string, elements...)
+  - React provides some built-in components that return HTML elements (h1, div, span...)
+  - Attribute names with dashes are camelCased (except data- & aria-)
+  - The `class` attribute is `className`, `for` attribute is `htmlFor`
+  - We can INTERPOLATE 🔥 js expressions 🔥 using curly brackets
+  - We interpolate attribute values and content
+*/
+
+/*
+💥💥💥 Rules when USING a React component 💥💥💥
+  - Components are utilized (invoked?) so we may obtain elements
+  - Instead of invoking the component with parens, we invoke with < />
+  - Instead of passing args with parens, we pass them with attribute-like syntax
+  - Don't forget all tags need to close correctly
+*/
+function App(props) {
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/_react.default.createElement("h1", null, "Welcome to React, Web ", props.cohort), /*#__PURE__*/_react.default.createElement("p", null, "Hello, ", props.name, ", you are ", props.age), /*#__PURE__*/_react.default.createElement("div", null, "It is week ", props.week), /*#__PURE__*/_react.default.createElement(_Playground.default, {
+    userLoggedIn: true,
+    userLoggedOut: ""
+  }));
 }
 
-var rootElement = document.getElementById("root");
-(0, _reactDom.render)( /*#__PURE__*/_react.default.createElement(Hero, null), rootElement);
-},{"react-dom":"../node_modules/react-dom/index.js","react":"../node_modules/react/index.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+(0, _reactDom.render)( /*#__PURE__*/_react.default.createElement(App, {
+  cohort: "37",
+  name: "Casey",
+  age: "74",
+  week: 2
+}), document.querySelector('#root'));
+/** 
+ *  props!!! -> data passed from one component to a child component
+ *  const props = {
+ *    cohort: '37',
+ *    name: 'Casey',
+ *    age: '74'
+ * }
+ * 
+ * 
+ * 
+*/
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./components/Playground":"components/Playground.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -29853,7 +29982,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49724" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54663" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
