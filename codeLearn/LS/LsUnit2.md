@@ -26,7 +26,14 @@
 * [WEB2.2](<#>)
 
      * [Day 1 -- 12-00-2021](<#>)
-        * [In Class](<#>)
+         * In Class
+            * Local --- [web-guided-project-react-components-1](<./LSchoolProject/web-guided-project-react-components-1/>)
+            * Github --- [web-guided-project-react-route](<https://github.com/sooof/web-guided-project-react-components-1>)
+
+            ```
+            git clone git@github.com:sooof/web-guided-project-react-components-1.git
+            ```
+        
         * [HomeWork](<#>)
      * [Day 2 -- 12-00-2021](<#>)
         * [In Class](<#>)
@@ -56,18 +63,20 @@
             ```
             git clone git@github.com:sooof/web-guided-project-react-router.git
             ```
-        * In Class
+        * Homework
             * Local --- [React-Router-Movies](<./LSchoolProject/React-Router-Movies>)
             * Github --- [React-Router-Movies](<https://github.com/sooof/React-Router-Movies>)
 
             ```
-            git clone git@github.com:everestsh/webreactTest.git
+            git clone git@github.com:sooof/React-Router-Movies.git
             ```
-     * [Day 2](<#>)
-        * [In Class](<#>)
-        * [HomeWork](<#>)
-     * [Day 2](<#>)
-        * [In Class](<#>)
+     * [Day 2 --- 10-12-2021](<#>)
+        * [In Class ](<#>)
+            * Local --- [web-guided-project-form-management](<./LSchoolProject/web-guided-project-form-management/>)
+            * Github --- [web-guided-project-form-management](<https://github.com/sooof/web-guided-project-form-management>)
+            ```
+            git@github.com:sooof/web-guided-project-form-management.git
+            ```
         * [HomeWork](<#>)
      * [Day 3 --- 10-13-2021](<#>)
         * In Class  
