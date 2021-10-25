@@ -25,31 +25,58 @@
 
 * [WEB2.2](<#>)
 
-     * [Day 1 -- 12-00-2021](<#>)
+     * [Day 1 -- 10-05-2021](<#>)
          * In Class
             * Local --- [web-guided-project-react-components-1](<./LSchoolProject/web-guided-project-react-components-1/>)
-            * Github --- [web-guided-project-react-route](<https://github.com/sooof/web-guided-project-react-components-1>)
+            * Github --- [ web-guided-project-react-components-2](<https://github.com/sooof/web-guided-project-react-components-1>)
 
             ```
             git clone git@github.com:sooof/web-guided-project-react-components-1.git
             ```
         
         * [HomeWork](<#>)
-     * [Day 2 -- 12-00-2021](<#>)
+     * [Day 2 -- 10-05-2021](<#>)
+         * In Class
+            * Local --- [web-guided-project-react-components-2](<./LSchoolProject/web-guided-project-react-components-2/>)
+            * Github --- [web-guided-project-react-components-2](<https://github.com/sooof/web-guided-project-react-components-2>)
+
+            ```
+            git clone git@github.com:sooof/web-guided-project-react-components-2.git
+            ```
+        * [HomeWork](<#>)
+            * Local --- [React-Components-Insta-Clone](<./LSchoolProject/React-Components-Insta-Clone/>)
+            * Github --- [React-Components-Insta-Clone](<https://github.com/sooof/React-Components-Insta-Clone>)
+
+            ```
+            git clone git@github.com:sooof/React-Components-Insta-Clone.git
+            ```
+     * [Day 3 -- 11-06-2021](<#>)
         * [In Class](<#>)
         * [HomeWork](<#>)
-     * [Day 2 -- 12-00-2021](<#>)
-        * [In Class](<#>)
-        * [HomeWork](<#>)
-     * [Day 3 -- 12-00-2021](<#>)
-        * [In Class](<#>)
-        * [HomeWork](<#>)
+            * Local --- [nasa-photo-of-the-day](<./LSchoolProject/nasa-photo-of-the-day/>)
+            * Github --- [nasa-photo-of-the-day](<https://github.com/sooof/nasa-photo-of-the-day>)
+
+            ```
+            git clone git@github.com:sooof/nasa-photo-of-the-day.git
+            ```
      * [Day 4 -- 12-00-2021](<#>)
         * [In Class](<#>)
         * [HomeWork](<#>)
+            * Local --- [#(<#>)
+            * Github --- [#](<>)
+
+            ```
+            git clone git@github.com:sooof/.git
+            ```
      * [Day 5 -- 12-00-2021: Sprint](<#>)
         * [In Class](<#>)
         * [HomeWork](<#>)
+            * Local --- [###](<#>)
+            * Github --- [###](<#>)
+
+            ```
+            git clone git@github.com:sooof/y.git
+            ```
      * [Test Project](<#>)
         * [Project](<#>)
 
@@ -90,8 +117,14 @@
         * [In Class](<#>)
         * [HomeWork](<#>)
      * [Day 5 Sprint](<#>)
-        * [In Class](<#>)
-        * [HomeWork](<#>)
+        
+        * [Sprint](<#>)
+            * Local --- [web-sprint-challenge-single-page-applications](<./LSchoolProject/web-sprint-challenge-single-page-applications/>)
+            * Github --- [web-sprint-challenge-single-page-applications](<https://github.com/sooof/web-sprint-challenge-single-page-applications>)
+
+            ```
+            git clone git@github.com:sooof/nasa-photo-of-the-day.git
+            ```
      * Test Project
         * Local --- [webreactTest](<./LSchoolProject/webreactTest/>)
         * Github --- [webreactTest](<https://github.com/everestsh/webreactTest>)
