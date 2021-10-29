@@ -50,6 +50,7 @@
             ```
             git clone git@github.com:sooof/web-module-project-custom-hook.git
             ```
+        * [Custom Hooks office Hours vidio](<https://www.youtube.com/watch?v=lkmiNfWXbtU>)
 
      * [Day 4 -- 12-00-2021](<#>)
         * [In Class](<#>)
