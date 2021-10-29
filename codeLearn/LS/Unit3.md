@@ -13,7 +13,7 @@
             ```
         * [HomeWork](<#>)
             * Local (B: Mingjun-Geng)--- [web-module-project-class-components](<./LSchoolProject/React-Components-Insta-Clone/>)
-            * Github --- [web-module-project-class-components/tree/Mingjun-Geng](<>)
+            * Github --- [web-module-project-class-components](<https://github.com/sooof/web-module-project-class-components>)
 
             ```
             git clone git@github.com:sooof/web-module-project-class-components.git
@@ -44,8 +44,8 @@
             git clone git@github.com:sooof/web-guided-project-custom-hook.git
             ```
         * [HomeWork](<#>)
-            * Local (B: mj.g)  --- [React-Components-Insta-Clone](<./LSchoolProject/web-module-project-custom-hook/>)
-            * Github --- [React-Components-Insta-Clone](<https://github.com/sooof/web-module-project-custom-hook>)
+            * Local (B: mj.g)  --- [web-guided-project-custom-hook](<./LSchoolProject/web-module-project-custom-hook/>)
+            * Github --- [web-guided-project-custom-hook](<https://github.com/sooof/web-module-project-custom-hook>)
 
             ```
             git clone git@github.com:sooof/web-module-project-custom-hook.git
@@ -53,8 +53,21 @@
         * [Custom Hooks office Hours vidio](<https://www.youtube.com/watch?v=lkmiNfWXbtU>)
 
      * [Day 4 -- 12-00-2021](<#>)
-        * [In Class](<#>)
+       * In Class
+            * Local --- [web-guided-project-testing-web-apps](<./LSchoolProject/web-guided-project-testing-web-apps/>)
+            * Github --- [web-guided-project-testing-web-apps](<https://github.com/sooof/web-guided-project-testing-web-apps/tree/mj.g>)
+
+            ```
+            git clone git@github.com:sooof/web-guided-project-testing-web-apps.git
+            ```
         * [HomeWork](<#>)
+            * Local (B: mj.g)  --- [web-module-project-testing-web-apps](<./LSchoolProject/web-module-project-testing-web-apps/>)
+            * Github --- [web-module-project-testing-web-apps](<https://github.com/sooof/web-module-project-testing-web-apps>)
+
+            ```
+            git clone git@github.com:sooof/web-module-project-testing-web-apps.git
+            ```
+        * [Custom Hooks office Hours vidio](<https://www.youtube.com/watch?v=lkmiNfWXbtU>)
      * [Day 5 -- 12-00-2021: Sprint](<#>)
         * [In Class](<#>)
         * [HomeWork](<#>)

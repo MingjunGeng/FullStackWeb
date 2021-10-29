@@ -1,0 +1,1 @@
+{"version":3,"sources":["breeds.js"],"names":["breeds"],"mappings":"AAAA,IAAMA,MAAM,GAAG,CACb,SADa,EAEb,eAFa,EAGb,YAHa,EAIb,iBAJa,EAKb,QALa,CAAf","file":"breeds.673dccbb.js","sourceRoot":"../src","sourcesContent":["const breeds = [\n  'mastiff',\n  'affenpinscher',\n  'australian',\n  'mexicanhairless',\n  'cocker',\n]\n"]}
