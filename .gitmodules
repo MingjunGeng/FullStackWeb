@@ -1,3 +1,30 @@
 [submodule "codeLearn/LS/Unit3/WEB3.3/webreactTest"]
 	path = codeLearn/LS/Unit3/webreactTest
 	url = https://github.com/everestsh/webreactTest
+[submodule "codeLearn/LS/Unit3/WEB3.2/web-sprint-challenge-advanced-react"]
+	path = codeLearn/LS/Unit3/WEB3.1/web-sprint-challenge-advanced-react
+	url = https://github.com/sooof/web-sprint-challenge-advanced-react
+[submodule "codeLearn/LS/Unit3/WEB3.2/D1_test/web-guided-project-reducer"]
+	path = codeLearn/LS/Unit3/WEB3.2/D1_test/web-guided-project-reducer
+	url = git@github.com:sooof/web-guided-project-reducer.git
+[submodule "codeLearn/LS/Unit3/WEB3.2/D1_test/web-module-project-reducer"]
+	path = codeLearn/LS/Unit3/WEB3.2/D1_test/web-module-project-reducer
+	url = git@github.com:sooof/web-module-project-reducer.git
+[submodule "codeLearn/LS/Unit3/WEB3.1/DSpint_work/web-sprint-challenge-advanced-react"]
+	path = codeLearn/LS/Unit3/WEB3.1/DSpint_work/web-sprint-challenge-advanced-react
+	url = git@github.com:sooof/web-sprint-challenge-advanced-react.git
+[submodule "codeLearn/LS/Unit3/WEB3.1/D1_work/web-guided-project-class-components"]
+	path = codeLearn/LS/Unit3/WEB3.1/D1_work/web-guided-project-class-components
+	url = git@github.com:sooof/web-guided-project-class-components.git
+[submodule "codeLearn/LS/Unit3/WEB3.1/D1_work/web-module-project-class-components"]
+	path = codeLearn/LS/Unit3/WEB3.1/D1_work/web-module-project-class-components
+	url = git@github.com:sooof/web-module-project-class-components.git
+[submodule "codeLearn/LS/Unit3/WEB3.1/D2_work/web-guided-project-lifecycle"]
+	path = codeLearn/LS/Unit3/WEB3.1/D2_work/web-guided-project-lifecycle
+	url = git@github.com:sooof/web-guided-project-lifecycle.git
+[submodule "codeLearn/LS/Unit3/WEB3.1/D2_work/web-module-project-lifecycle"]
+	path = codeLearn/LS/Unit3/WEB3.1/D2_work/web-module-project-lifecycle
+	url = git@github.com:sooof/web-module-project-lifecycle.git
+[submodule "codeLearn/LS/Unit3/WEB3.2/D2_test/web-guided-project-redux"]
+	path = codeLearn/LS/Unit3/WEB3.2/D2_test/web-guided-project-redux
+	url = git@github.com:sooof/web-guided-project-redux.git
