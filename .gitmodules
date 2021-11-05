@@ -28,3 +28,15 @@
 [submodule "codeLearn/LS/Unit3/WEB3.2/D2_test/web-guided-project-redux"]
 	path = codeLearn/LS/Unit3/WEB3.2/D2_test/web-guided-project-redux
 	url = git@github.com:sooof/web-guided-project-redux.git
+[submodule "codeLearn/LS/Unit3/WEB3.2/D2_test/web-module-project-redux"]
+	path = codeLearn/LS/Unit3/WEB3.2/D2_test/web-module-project-redux
+	url = git@github.com:sooof/web-module-project-redux.git
+[submodule "codeLearn/LS/Unit3/WEB3.2/D3_test/web-guided-project-async-redux"]
+	path = codeLearn/LS/Unit3/WEB3.2/D3_test/web-guided-project-async-redux
+	url = git@github.com:sooof/web-guided-project-async-redux.git
+[submodule "codeLearn/LS/Unit3/WEB3.2/D3_test/web-module-project-async-redux"]
+	path = codeLearn/LS/Unit3/WEB3.2/D3_test/web-module-project-async-redux
+	url = git@github.com:sooof/web-module-project-async-redux.git
+[submodule "codeLearn/LS/Unit3/WEB3.2/D4_test/web-module-project-context"]
+	path = codeLearn/LS/Unit3/WEB3.2/D4_test/web-module-project-context
+	url = git@github.com:sooof/web-module-project-context.git
