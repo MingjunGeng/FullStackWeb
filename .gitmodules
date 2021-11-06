@@ -40,3 +40,21 @@
 [submodule "codeLearn/LS/Unit3/WEB3.2/D4_test/web-module-project-context"]
 	path = codeLearn/LS/Unit3/WEB3.2/D4_test/web-module-project-context
 	url = git@github.com:sooof/web-module-project-context.git
+[submodule "codeLearn/LS/Unit3/WEB3.2/D4_test/tmp/web-guided-project-context"]
+	path = codeLearn/LS/Unit3/WEB3.2/D4_test/tmp/web-guided-project-context
+	url = git@github.com:sooof/web-guided-project-context.git
+[submodule "codeLearn/LS/Unit3/WEB3.2/DSpint_work/web-sprint-challenge-advanced-state-management"]
+	path = codeLearn/LS/Unit3/WEB3.2/DSpint_work/web-sprint-challenge-advanced-state-management
+	url = git@github.com:sooof/web-sprint-challenge-advanced-state-management.git
+[submodule "codeLearn/LS/Unit3/WEB3.1/D3_work/web-guided-project-custom-hook"]
+	path = codeLearn/LS/Unit3/WEB3.1/D3_work/web-guided-project-custom-hook
+	url = git@github.com:sooof/web-guided-project-custom-hook.git
+[submodule "codeLearn/LS/Unit3/WEB3.1/D3_work/web-module-project-custom-hook"]
+	path = codeLearn/LS/Unit3/WEB3.1/D3_work/web-module-project-custom-hook
+	url = git@github.com:sooof/web-module-project-custom-hook.git
+[submodule "codeLearn/LS/Unit3/WEB3.1/D4_work/web-guided-project-testing-web-apps"]
+	path = codeLearn/LS/Unit3/WEB3.1/D4_work/web-guided-project-testing-web-apps
+	url = git@github.com:sooof/web-guided-project-testing-web-apps.git
+[submodule "codeLearn/LS/Unit3/WEB3.1/D4_work/web-module-project-testing-web-apps"]
+	path = codeLearn/LS/Unit3/WEB3.1/D4_work/web-module-project-testing-web-apps
+	url = git@github.com:sooof/web-module-project-testing-web-apps.git
