@@ -97,3 +97,12 @@
 [submodule "codeLearn/LS/Unit3/WEB3.3/DaySprint/web-sprint-challenge-advanced-web-applications"]
 	path = codeLearn/LS/Unit3/WEB3.3/DaySprint/web-sprint-challenge-advanced-web-applications
 	url = git@github.com:sooof/web-sprint-challenge-advanced-web-applications.git
+[submodule "codeLearn/LS/Unit2/WEB2.3/DaySprint/web-sprint-challenge-single-page-applications"]
+	path = codeLearn/LS/Unit2/WEB2.3/DaySprint/web-sprint-challenge-single-page-applications
+	url = git@github.com:sooof/web-sprint-challenge-single-page-applications.git
+[submodule "codeLearn/LS/Unit2/WEB2.3/Day4/github-usercard"]
+	path = codeLearn/LS/Unit2/WEB2.3/Day4/github-usercard
+	url = git@github.com:sooof/github-usercard.git
+[submodule "codeLearn/LS/Unit2/WEB2.3/Day4/web-guided-project-components-2"]
+	path = codeLearn/LS/Unit2/WEB2.3/Day4/web-guided-project-components-2
+	url = git@github.com:sooof/web-guided-project-components-2.git
