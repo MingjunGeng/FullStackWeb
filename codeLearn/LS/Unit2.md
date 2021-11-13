@@ -84,14 +84,14 @@
 
      * [Day 1 --- 10-11-2021](<#>)
         * In Class
-            * Local --- [web-guided-project-react-route](<./LSchoolProject/web-guided-project-react-router/>)
+            * Local --- [web-guided-project-react-route](<./Unit2/WEB2.3/Day1/web-guided-project-react-router/>)
             * Github --- [web-guided-project-react-route](<https://github.com/sooof/web-guided-project-react-router>)
 
             ```
             git clone git@github.com:sooof/web-guided-project-react-router.git
             ```
         * Homework
-            * Local --- [React-Router-Movies](<./LSchoolProject/React-Router-Movies>)
+            * Local --- [React-Router-Movies](<./Unit2/WEB2.3/Day1/React-Router-Movies>)
             * Github --- [React-Router-Movies](<https://github.com/sooof/React-Router-Movies>)
 
             ```
@@ -99,12 +99,17 @@
             ```
      * [Day 2 --- 10-12-2021](<#>)
         * [In Class ](<#>)
-            * Local --- [web-guided-project-form-management](<./LSchoolProject/web-guided-project-form-management/>)
-            * Github --- [web-guided-project-form-management](<https://github.com/sooof/web-guided-project-form-management>)
+            * Local --- [web-guided-project-components-1](<./Unit2/WEB2.3/Day2/web-guided-project-form-management/>)
+            * Github --- [web-guided-project-components-1](https://github.com/sooof/web-guided-project-components-1
             ```
-            git@github.com:sooof/web-guided-project-form-management.git
+            git clone git@github.com:sooof/web-guided-project-components-1.git
             ```
         * [HomeWork](<#>)
+            * Local --- [web-guided-project-form-management](<./Unit2/WEB2.3/Day2/web-guided-project-form-management/>)
+            * Github --- [team-builder](<https://github.com/sooof/team-builder>)
+            ```
+            git clone git@github.com:sooof/team-builder.git
+            ```
      * [Day 3 --- 10-13-2021](<#>)
         * In Class  
             * Local --- [web-guided-project-advanced-forms](<./LSchoolProject/web-guided-project-advanced-forms/>)

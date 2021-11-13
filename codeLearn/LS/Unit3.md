@@ -96,7 +96,7 @@
             ```
             git clone git@github.com:sooof/web-module-project-reducer.git
             ```
-     * [Day 2 -- 11-02-2021](<#>)s
+     * [Day 2 -- 11-02-2021](<#>)
      
          * In Class
             * Local (B: mj.g)--- [web-guided-project-redux](<./Unit3/WEB3.2/D2_test/web-guided-project-redux/>)
@@ -105,6 +105,14 @@
             ```
             git clone git@github.com:sooof/web-guided-project-redux.git
             ```
+         * Off ice Hour
+            * Local (B: mj.g)--- [Car-Sales](<./Unit3/WEB3.2/D2_test/Car-Sales/>)
+            * Github --- [Car-Sales/tree/mj.g](<https://github.com/sooof/Car-Sales>)
+
+            ```
+            git clone git@github.com:sooof/Car-Sales.git
+            ```
+            * [Custom Hooks office Hours vidio](<https://www.youtube.com/watch?v=shr7l58Weg0>)
         * [HomeWork](<#>)
             * Local (B: Mingjun-Geng)--- [web-module-project-redux](<./Unit3/WEB3.2/D2_test/web-module-project-redux/>)
             * Github --- [web-module-project-reducer](<https://github.com/sooof/web-module-project-redux>)
@@ -152,4 +160,89 @@
 
             ```
             git clone git@github.com:sooof/web-sprint-challenge-advanced-state-management.git
+            ```
+
+
+* [WEB3.3](<#>)
+
+     * [Day 1 -- 11-08-2021](<#>)s
+     
+         * In Class
+            * Local (B: mj.g)--- [web-guided-project-testing-react](<./Unit3/WEB3.3/Day1/web-guided-project-testing-react/>)
+            * Github --- [web-guided-project-testing-react/tree/mj.g](<https://github.com/sooof/web-guided-project-testing-react/tree/mj.g>)
+
+            ```
+            git clone git@github.com:sooof/web-guided-project-testing-react.git
+            ```
+        * [HomeWork](<#>)
+            * Local (B: Mingjun-Geng)--- [web-module-project-testing-react](<./Unit3/WEB3.3/Day1/web-module-project-testing-react/>)
+            * Github --- [web-module-project-testing-react](<https://github.com/sooof/web-module-project-testing-react>)
+
+            ```
+            git clone git@github.com:sooof/web-module-project-testing-react.git
+            ```
+     * [Day 2 -- 11-09-2021](<#>)
+     
+         * In Class
+            * Local (B: mj.g)--- [web-guided-project-client-auth](<./Unit3/WEB3.3/Day2/web-guided-project-client-auth/>)
+            * Github --- [web-guided-project-client-auth/tree/mj.g](<https://github.com/sooof/web-guided-project-client-auth/tree/mj.g>)
+
+            ```
+            git clone git@github.com:sooof/web-guided-project-client-auth.git
+            ```
+         * Off ice Hour
+            * Local (B: mj.g)--- [Car-Sales](<./Unit3/WEB3.3/Day2/Car-Sales/>)
+            * Github --- [Car-Sales/tree/mj.g](<https://github.com/sooof/Car-Sales>)
+
+            ```
+            git clone git@github.com:sooof/Car-Sales.git
+            ```
+            * [Custom Hooks office Hours vidio](<https://www.youtube.com/watch?v=shr7l58Weg0>)
+        * [HomeWork](<#>)
+            * Local (B: Mingjun-Geng)--- [web-module-project-client-auth](<./Unit3/WEB3.3/Day2/web-module-project-client-auth/>)
+            * Github --- [web-module-project-client-auth](<https://github.com/sooof/web-module-project-client-auth>)
+
+            ```
+            git clone git@github.com:sooof/web-module-project-client-auth.git
+            ```
+     * [Day 3 -- 11-10-2021](<#>)
+     
+         * In Class
+            * Local (B: mj.g)--- [web-guided-project-HTTP](<./Unit3/WEB3.3/Day3/web-guided-project-async-redux/>)
+            * Github --- [web-guided-project-HTTP/tree/mj.g](<https://github.com/sooof/web-guided-project-async-redux/tree/mj.g>)
+
+            ```
+            git clone git@github.com:sooof/web-guided-project-HTTP.git
+            ```
+        * [HomeWork](<#>)
+            * Local (B: Mingjun-Geng)--- [web-module-project-HTTP](<./Unit3/WEB3.3/Day3/web-module-project-HTTP/>)
+            * Github --- [web-module-project-HTTP](<https://github.com/sooof/web-module-project-HTTP>)
+
+            ```
+            git git@github.com:sooof/web-module-project-HTTP.git
+            ```
+     * [Day 4 -- 11-11-2021](<#>)
+     
+         * In Class
+            * Local (B: mj.g)--- [###](<./Unit3//WEB3.4/Day3/###/>)
+            * Github --- [###/tree/mj.g](<https://github.com/sooof/###/tree/mj.g>)
+
+            ```
+            git clone git@github.com:sooof/w###.git
+            ```
+        * [HomeWork](<#>)
+            * Local (B: Mingjun-Geng)--- [###](<./Unit3//WEB3.3/Day4/###/>)
+            * Github --- [###](<https://github.com/sooof/###>)
+
+            ```
+            git git@github.com:sooof/###.git
+            ```
+     * [Day 5 -- 11-12-2021: Sprint](<#>)
+          
+        *   [Sprint](<#>)
+            *  Local   [web-sprint-challenge-advanced-web-applications](./Unit3/WEB3.3/DaySprint/web-sprint-challenge-advanced-web-applications)
+            *  Github --- [web-sprint-challenge-advanced-web-applications](<https://github.com/sooof/web-sprint-challenge-advanced-web-applications>)
+
+            ```
+            git clone git@github.com:sooof/web-sprint-challenge-advanced-web-applications.git
             ```
