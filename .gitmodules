@@ -13,12 +13,6 @@
 [submodule "codeLearn/LS/Unit3/WEB3.1/DSpint_work/web-sprint-challenge-advanced-react"]
 	path = codeLearn/LS/Unit3/WEB3.1/DSpint_work/web-sprint-challenge-advanced-react
 	url = git@github.com:sooof/web-sprint-challenge-advanced-react.git
-[submodule "codeLearn/LS/Unit3/WEB3.1/D1_work/web-guided-project-class-components"]
-	path = codeLearn/LS/Unit3/WEB3.1/D1_work/web-guided-project-class-components
-	url = git@github.com:sooof/web-guided-project-class-components.git
-[submodule "codeLearn/LS/Unit3/WEB3.1/D1_work/web-module-project-class-components"]
-	path = codeLearn/LS/Unit3/WEB3.1/D1_work/web-module-project-class-components
-	url = git@github.com:sooof/web-module-project-class-components.git
 [submodule "codeLearn/LS/Unit3/WEB3.1/D2_work/web-guided-project-lifecycle"]
 	path = codeLearn/LS/Unit3/WEB3.1/D2_work/web-guided-project-lifecycle
 	url = git@github.com:sooof/web-guided-project-lifecycle.git
@@ -71,7 +65,7 @@
 	path = codeLearn/LS/Unit2/WEB2.3/Day2/team-builder
 	url = git@github.com:sooof/team-builder.git
 [submodule "codeLearn/LS/Unit2/WEB2.3/Day3/web-guided-project-components-1"]
-	path = codeLearn/LS/Unit2/WEB2.3/Day3/web-guided-project-components-1
+	path = codeLearn/LS/Unit2/WEB2.1/20210929/web-guided-project-components-1
 	url = git@github.com:sooof/web-guided-project-components-1.git
 [submodule "codeLearn/LS/Unit3/WEB3.3/Day1/web-guided-project-testing-react"]
 	path = codeLearn/LS/Unit3/WEB3.3/Day1/web-guided-project-testing-react
@@ -101,8 +95,26 @@
 	path = codeLearn/LS/Unit2/WEB2.3/DaySprint/web-sprint-challenge-single-page-applications
 	url = git@github.com:sooof/web-sprint-challenge-single-page-applications.git
 [submodule "codeLearn/LS/Unit2/WEB2.3/Day4/github-usercard"]
-	path = codeLearn/LS/Unit2/WEB2.3/Day4/github-usercard
+	path = codeLearn/LS/Unit2/WEB2.1/20210930/github-usercard
 	url = git@github.com:sooof/github-usercard.git
 [submodule "codeLearn/LS/Unit2/WEB2.3/Day4/web-guided-project-components-2"]
-	path = codeLearn/LS/Unit2/WEB2.3/Day4/web-guided-project-components-2
+	path = codeLearn/LS/Unit2/WEB2.1/20210930/web-guided-project-components-2
 	url = git@github.com:sooof/web-guided-project-components-2.git
+[submodule "codeLearn/LS/Unit2/WEB2.3/Day3/Newsfeed-Components"]
+	path = codeLearn/LS/Unit2/WEB2.1/20210929/Newsfeed-Components
+	url = git@github.com:sooof/Newsfeed-Components.git
+[submodule "codeLearn/LS/Unit2/WEB2.3/Day3/web-guided-project-advanced-forms"]
+	path = codeLearn/LS/Unit2/WEB2.3/Day3/web-guided-project-advanced-forms
+	url = git@github.com:sooof/web-guided-project-advanced-forms.git
+[submodule "codeLearn/LS/Unit2/WEB2.3/Day3/User-Onboarding"]
+	path = codeLearn/LS/Unit2/WEB2.3/Day3/User-Onboarding
+	url = git@github.com:sooof/User-Onboarding.git
+[submodule "codeLearn/LS/Unit2/WEB2.3/Day4/web-guided-project-cypress"]
+	path = codeLearn/LS/Unit2/WEB2.3/Day4/web-guided-project-cypress
+	url = git@github.com:sooof/web-guided-project-cypress.git
+[submodule "codeLearn/LS/Unit2/WEB2.3/Day4/Cypress-Testing"]
+	path = codeLearn/LS/Unit2/WEB2.3/Day4/Cypress-Testing
+	url = git@github.com:sooof/Cypress-Testing.git
+[submodule "codeLearn/LS/Unit2/WEB2.2/Day5_sprint/web-sprint-challenge-intro-to-react"]
+	path = codeLearn/LS/Unit2/WEB2.2/Day5_sprint/web-sprint-challenge-intro-to-react
+	url = git@github.com:sooof/web-sprint-challenge-intro-to-react.git

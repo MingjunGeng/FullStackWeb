@@ -6,17 +6,17 @@
      
          * In Class
             * Local (B: mj.g)--- [web-guided-project-class-components](<./Unit3/WEB3.1/D1_work/web-guided-project-class-components/>)
-            * Github --- [web-guided-project-class-components/tree/mj.g](<https://github.com/sooof/web-guided-project-class-components/tree/mj.g>)
+            * Github --- [web-guided-project-class-components/tree/mj.g](<https://github.com/everestsh/web-guided-project-class-components/tree/mj.g>)
 
             ```
-            git clone git@github.com:sooof/web-guided-project-class-components.git
+            git clone git@github.com:everestsh/web-guided-project-class-components.git
             ```
         * [HomeWork](<#>)
             * Local (B: Mingjun-Geng)--- [web-module-project-class-components](<./Unit3/WEB3.1/D1_work/web-module-project-class-components/>)
-            * Github --- [web-module-project-class-components](<https://github.com/sooof/web-module-project-class-components>)
+            * Github --- [web-module-project-class-components](<https://github.com/everestsh/web-module-project-class-components>)
 
             ```
-            git clone git@github.com:sooof/web-module-project-class-components.git
+            git clone git@github.com:everestsh/web-guided-project-class-components.git
             ```
      * [Day 2 -- 10-26-2021](<#>)
      
