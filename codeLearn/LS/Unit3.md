@@ -80,7 +80,7 @@
 
 * [WEB3.2](<#>)
 
-     * [Day 1 -- 11-01-2021](<#>)s
+     * [Day 1 -- 11-01-2021](<#>)
      
          * In Class
             * Local (B: mj.g)--- [web-guided-project-reducer](<./Unit3/WEB3.2/D1_test/web-guided-project-reducer/>)
