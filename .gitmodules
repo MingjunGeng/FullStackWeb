@@ -37,24 +37,15 @@
 [submodule "codeLearn/LS/Unit3/WEB3.3/Day1/web-guided-project-testing-react"]
 	path = codeLearn/LS/Unit3/WEB3.3/Day1/web-guided-project-testing-react
 	url = git@github.com:sooof/web-guided-project-testing-react.git
-[submodule "codeLearn/LS/Unit3/WEB3.3/Day1/web-module-project-testing-react"]
-	path = codeLearn/LS/Unit3/WEB3.3/Day1/web-module-project-testing-react
-	url = git@github.com:sooof/web-module-project-testing-react.git
 [submodule "codeLearn/LS/Unit3/WEB3.2/D2_test/Car-Sales"]
 	path = codeLearn/LS/Unit3/WEB3.2/D2_test/Car-Sales
 	url = git@github.com:sooof/Car-Sales.git
 [submodule "codeLearn/LS/Unit3/WEB3.3/Day2/web-guided-project-client-auth"]
 	path = codeLearn/LS/Unit3/WEB3.3/Day2/web-guided-project-client-auth
 	url = git@github.com:sooof/web-guided-project-client-auth.git
-[submodule "codeLearn/LS/Unit3/WEB3.3/Day2/web-module-project-client-auth"]
-	path = codeLearn/LS/Unit3/WEB3.3/Day2/web-module-project-client-auth
-	url = git@github.com:sooof/web-module-project-client-auth.git
 [submodule "codeLearn/LS/Unit3/WEB3.3/Day3/web-guided-project-HTTP"]
 	path = codeLearn/LS/Unit3/WEB3.3/Day3/web-guided-project-HTTP
 	url = git@github.com:sooof/web-guided-project-HTTP.git
-[submodule "codeLearn/LS/Unit3/WEB3.3/Day3/web-module-project-HTTP"]
-	path = codeLearn/LS/Unit3/WEB3.3/Day3/web-module-project-HTTP
-	url = git@github.com:sooof/web-module-project-HTTP.git
 [submodule "codeLearn/LS/Unit3/WEB3.3/DaySprint/web-sprint-challenge-advanced-web-applications"]
 	path = codeLearn/LS/Unit3/WEB3.3/DaySprint/web-sprint-challenge-advanced-web-applications
 	url = git@github.com:sooof/web-sprint-challenge-advanced-web-applications.git
@@ -151,3 +142,15 @@
 [submodule "codeLearn/LS/Unit3-w49/WEB3.2/DaySprint/web-sprint-challenge-advanced-state-management"]
 	path = codeLearn/LS/Unit3-w49/WEB3.2/DaySprint/web-sprint-challenge-advanced-state-management
 	url = git@github.com:sooof/web-sprint-challenge-advanced-state-management.git
+[submodule "codeLearn/LS/Unit3/WEB3.3/Day1/web-module-project-testing-react"]
+	path = codeLearn/LS/Unit3/WEB3.3/Day1/web-module-project-testing-react
+	url = git@github.com:everestsh/web-module-project-testing-react.git
+[submodule "codeLearn/LS/Unit3-w49/WEB3.3/DAY1/web-module-project-testing-react"]
+	path = codeLearn/LS/Unit3-w49/WEB3.3/DAY1/web-module-project-testing-react
+	url = git@github.com:sooof/web-module-project-testing-react.git
+[submodule "codeLearn/LS/Unit3/WEB3.3/Day2/web-module-project-client-auth"]
+	path = codeLearn/LS/Unit3/WEB3.3/Day2/web-module-project-client-auth
+	url = git@github.com:everestsh/web-module-project-client-auth.git
+[submodule "codeLearn/LS/Unit3-w49/WEB3.3/DAY2/web-module-project-client-auth"]
+	path = codeLearn/LS/Unit3-w49/WEB3.3/DAY2/web-module-project-client-auth
+	url = git@github.com:sooof/web-module-project-client-auth.git

@@ -54,14 +54,7 @@
 * [WEB3.2](<#>)
 
      * [Day 1 -- 11-01-2021](<#>)s
-     
-         * In Class
-            * Local (B: mj.g)--- [web-guided-project-reducer](<./Unit3/WEB3.2/D1_test/web-guided-project-reducer/>)
-            * Github --- [web-guided-project-reducer/tree/mj.g](<https://github.com/sooof/web-guided-project-reducer/tree/mj.g>)
-
-            ```
-            git clone git@github.com:sooof/web-guided-project-reducer.git
-            ```
+       
         * [HomeWork](<#>)
             * Local (B: Mingjun-Geng)--- [web-module-project-reducer](<./Unit3/WEB3.2/D1_test/web-module-project-reducer/>)
             * Github --- [web-module-project-reducer](<https://github.com/everestsh/web-module-project-reducer>)
@@ -71,21 +64,6 @@
             ```
      * [Day 2 -- 11-02-2021](<#>)
      
-         * In Class
-            * Local (B: mj.g)--- [web-guided-project-redux](<./Unit3/WEB3.2/D2_test/web-guided-project-redux/>)
-            * Github --- [web-guided-project-redux/tree/mj.g](<https://github.com/sooof/web-guided-project-redux/tree/mj.g>)
-
-            ```
-            git clone git@github.com:sooof/web-guided-project-redux.git
-            ```
-         * Off ice Hour
-            * Local (B: mj.g)--- [Car-Sales](<./Unit3/WEB3.2/D2_test/Car-Sales/>)
-            * Github --- [Car-Sales/tree/mj.g](<https://github.com/sooof/Car-Sales>)
-
-            ```
-            git clone git@github.com:sooof/Car-Sales.git
-            ```
-            * [Custom Hooks office Hours vidio](<https://www.youtube.com/watch?v=shr7l58Weg0>)
         * [HomeWork](<#>)
             * Local (B: Mingjun-Geng)--- [web-module-project-redux](<./Unit3/WEB3.2/D2_test/web-module-project-redux/>)
             * Github --- [web-module-project-reducer](<https://github.com/sooof/web-module-project-redux>)
@@ -95,13 +73,6 @@
             ```
      * [Day 3 -- 11-03-2021](<#>)
      
-         * In Class
-            * Local (B: mj.g)--- [web-guided-project-async-redux](<./Unit3/WEB3.2/D3_test/web-guided-project-async-redux/>)
-            * Github --- [web-guided-project-async-redux/tree/mj.g](<https://github.com/sooof/web-guided-project-async-redux/tree/mj.g>)
-
-            ```
-            git clone git@github.com:sooof/web-guided-project-async-redux.git
-            ```
         * [HomeWork](<#>)
             * Local (B: Mingjun-Geng)--- [web-module-project-async-redux](<./Unit3/WEB3.2/D3_test/web-module-project-async-redux/>)
             * Github --- [web-module-project-async-redux](<https://github.com/sooof/web-module-project-async-redux>)
@@ -111,13 +82,6 @@
             ```
      * [Day 4 -- 11-04-2021](<#>)
      
-         * In Class
-            * Local (B: mj.g)--- [web-guided-project-context](<./Unit3/WEB3.2/D4_test/web-guided-project-context/>)
-            * Github --- [web-guided-project-context/tree/mj.g](<https://github.com/sooof/web-guided-project-context/tree/mj.g>)
-
-            ```
-            git clone git@github.com:sooof/web-guided-project-context.git
-            ```
         * [HomeWork](<#>)
             * Local (B: Mingjun-Geng)--- [web-module-project-context](<./Unit3/WEB3.2/D4_test/web-module-project-context/>)
             * Github --- [web-module-project-context](<https://github.com/sooof/web-module-project-async-redux>)
@@ -139,14 +103,7 @@
 * [WEB3.3](<#>)
 
      * [Day 1 -- 11-08-2021](<#>)s
-     
-         * In Class
-            * Local (B: mj.g)--- [web-guided-project-testing-react](<./Unit3/WEB3.3/Day1/web-guided-project-testing-react/>)
-            * Github --- [web-guided-project-testing-react/tree/mj.g](<https://github.com/sooof/web-guided-project-testing-react/tree/mj.g>)
 
-            ```
-            git clone git@github.com:sooof/web-guided-project-testing-react.git
-            ```
         * [HomeWork](<#>)
             * Local (B: Mingjun-Geng)--- [web-module-project-testing-react](<./Unit3/WEB3.3/Day1/web-module-project-testing-react/>)
             * Github --- [web-module-project-testing-react](<https://github.com/sooof/web-module-project-testing-react>)
@@ -156,21 +113,6 @@
             ```
      * [Day 2 -- 11-09-2021](<#>)
      
-         * In Class
-            * Local (B: mj.g)--- [web-guided-project-client-auth](<./Unit3/WEB3.3/Day2/web-guided-project-client-auth/>)
-            * Github --- [web-guided-project-client-auth/tree/mj.g](<https://github.com/sooof/web-guided-project-client-auth/tree/mj.g>)
-
-            ```
-            git clone git@github.com:sooof/web-guided-project-client-auth.git
-            ```
-         * Office Hour
-            * Local (B: mj.g)--- [Car-Sales](<./Unit3/WEB3.3/Day2/Car-Sales/>)
-            * Github --- [Car-Sales/tree/mj.g](<https://github.com/sooof/Car-Sales>)
-
-            ```
-            git clone git@github.com:sooof/Car-Sales.git
-            ```
-            * [Custom Hooks office Hours vidio](<https://www.youtube.com/watch?v=shr7l58Weg0>)
         * [HomeWork](<#>)
             * Local (B: Mingjun-Geng)--- [web-module-project-client-auth](<./Unit3/WEB3.3/Day2/web-module-project-client-auth/>)
             * Github --- [web-module-project-client-auth](<https://github.com/sooof/web-module-project-client-auth>)
