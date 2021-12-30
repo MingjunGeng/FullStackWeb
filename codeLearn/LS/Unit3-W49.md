@@ -122,29 +122,16 @@
             ```
      * [Day 3 -- 11-10-2021](<#>)
      
-         * In Class
-            * Local (B: mj.g)--- [web-guided-project-HTTP](<./Unit3/WEB3.3/Day3/web-guided-project-async-redux/>)
-            * Github --- [web-guided-project-HTTP/tree/mj.g](<https://github.com/sooof/web-guided-project-async-redux/tree/mj.g>)
-
-            ```
-            git clone git@github.com:sooof/web-guided-project-HTTP.git
-            ```
         * [HomeWork](<#>)
             * Local (B: Mingjun-Geng)--- [web-module-project-HTTP](<./Unit3/WEB3.3/Day3/web-module-project-HTTP/>)
-            * Github --- [web-module-project-HTTP](<https://github.com/sooof/web-module-project-HTTP>)
+            * Github --- [web-module-project-HTTP](<https://github.com/everestsh/web-module-project-HTTP>)
 
             ```
-            git git@github.com:sooof/web-module-project-HTTP.git
+            git git@github.com:everestsh/web-module-project-HTTP.git
             ```
      * [Day 4 -- 11-11-2021](<#>)
      
-         * In Class
-            * Local (B: mj.g)--- [###](<./Unit3//WEB3.4/Day3/###/>)
-            * Github --- [###/tree/mj.g](<https://github.com/sooof/###/tree/mj.g>)
-
-            ```
-            git clone git@github.com:sooof/w###.git
-            ```
+ 
         * [HomeWork](<#>)
             * Local (B: Mingjun-Geng)--- [###](<./Unit3//WEB3.3/Day4/###/>)
             * Github --- [###](<https://github.com/sooof/###>)
