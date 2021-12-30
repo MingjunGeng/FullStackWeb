@@ -154,3 +154,15 @@
 [submodule "codeLearn/LS/Unit3-w49/WEB3.3/DAY2/web-module-project-client-auth"]
 	path = codeLearn/LS/Unit3-w49/WEB3.3/DAY2/web-module-project-client-auth
 	url = git@github.com:sooof/web-module-project-client-auth.git
+[submodule "codeLearn/LS/Unit3/WEB3.3/Day3/web-module-project-HTTP"]
+	path = codeLearn/LS/Unit3/WEB3.3/Day3/web-module-project-HTTP
+	url = git@github.com:everestsh/web-module-project-HTTP.git
+[submodule "codeLearn/LS/Unit3-w49/WEB3.3/DAY3/web-module-project-HTTP"]
+	path = codeLearn/LS/Unit3-w49/WEB3.3/DAY3/web-module-project-HTTP
+	url = git@github.com:sooof/web-module-project-HTTP.git
+[submodule "codeLearn/LS/Unit3-w49/WEB3.3/DAY4/web-module-project-deploying-web-apps"]
+	path = codeLearn/LS/Unit3-w49/WEB3.3/DAY4/web-module-project-deploying-web-apps
+	url = git@github.com:sooof/web-module-project-deploying-web-apps.git
+[submodule "codeLearn/LS/Unit3-w49/WEB3.3/DAYSprint/web-sprint-challenge-advanced-web-applications"]
+	path = codeLearn/LS/Unit3-w49/WEB3.3/DAYSprint/web-sprint-challenge-advanced-web-applications
+	url = git@github.com:sooof/web-sprint-challenge-advanced-web-applications.git
