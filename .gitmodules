@@ -166,3 +166,33 @@
 [submodule "codeLearn/LS/Unit3-w49/WEB3.3/DAYSprint/web-sprint-challenge-advanced-web-applications"]
 	path = codeLearn/LS/Unit3-w49/WEB3.3/DAYSprint/web-sprint-challenge-advanced-web-applications
 	url = git@github.com:sooof/web-sprint-challenge-advanced-web-applications.git
+[submodule "codeLearn/LS/Unit4/Web4.1/Day1/node-api1-guided"]
+	path = codeLearn/LS/Unit4/Web4.1/Day1/node-api1-guided
+	url = git@github.com:everestsh/node-api1-guided.git
+[submodule "codeLearn/LS/Unit4/Web4.1/Day1/webapi-i-challenge"]
+	path = codeLearn/LS/Unit4/Web4.1/Day1/webapi-i-challenge
+	url = git@github.com:everestsh/webapi-i-challenge.git
+[submodule "codeLearn/LS/Unit4/Web4.1/Day1/node-api1-project"]
+	path = codeLearn/LS/Unit4/Web4.1/Day1/node-api1-project
+	url = git@github.com:sooof/node-api1-project.git
+[submodule "codeLearn/LS/Unit4/Web4.1/Day2/node-api2-guided"]
+	path = codeLearn/LS/Unit4/Web4.1/Day2/node-api2-guided
+	url = git@github.com:everestsh/node-api2-guided.git
+[submodule "codeLearn/LS/Unit4/Web4.1/Day2/node-api2-project"]
+	path = codeLearn/LS/Unit4/Web4.1/Day2/node-api2-project
+	url = git@github.com:sooof/node-api2-project.git
+[submodule "codeLearn/LS/Unit4/Web4.1/Day3/node-api3-guided"]
+	path = codeLearn/LS/Unit4/Web4.1/Day3/node-api3-guided
+	url = git@github.com:everestsh/node-api3-guided.git
+[submodule "codeLearn/LS/Unit4/Web4.1/Day3/node-api3-project"]
+	path = codeLearn/LS/Unit4/Web4.1/Day3/node-api3-project
+	url = git@github.com:sooof/node-api3-project.git
+[submodule "codeLearn/LS/Unit4/Web4.1/Day4/webapi-iv-guided"]
+	path = codeLearn/LS/Unit4/Web4.1/Day4/webapi-iv-guided
+	url = git@github.com:everestsh/webapi-iv-guided.git
+[submodule "codeLearn/LS/Unit4/Web4.1/Day4/node-api4-project"]
+	path = codeLearn/LS/Unit4/Web4.1/Day4/node-api4-project
+	url = git@github.com:sooof/node-api4-project.git
+[submodule "codeLearn/LS/Unit4/Web4.1/DaySprint/web-sprint-challenge-build-a-web-api"]
+	path = codeLearn/LS/Unit4/Web4.1/DaySprint/web-sprint-challenge-build-a-web-api
+	url = git@github.com:sooof/web-sprint-challenge-build-a-web-api.git
