@@ -208,3 +208,6 @@
 [submodule "codeLearn/LS/Unit1/WEB1.2/Day1/sooof-090621-U1W12D1-HTML-CSS-Responsive-Practice"]
 	path = codeLearn/LS/Unit1/WEB1.2/Day1/sooof-090621-U1W12D1-HTML-CSS-Responsive-Practice
 	url = git@github.com:everestsh/sooof-090621-U1W12D1-HTML-CSS-Responsive-Practice.git
+[submodule "codeLearn/LS/Unit1/WEB1.2/Day1/sooof-090621-U1W12D1-User-Interface-II"]
+	path = codeLearn/LS/Unit1/WEB1.2/Day1/sooof-090621-U1W12D1-User-Interface-II
+	url = git@github.com:everestsh/sooof-090621-U1W12D1-User-Interface-II.git
