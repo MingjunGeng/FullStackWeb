@@ -172,15 +172,6 @@
 [submodule "codeLearn/LS/Unit4/Web4.1/Day1/node-api1-project"]
 	path = codeLearn/LS/Unit4/Web4.1/Day1/node-api1-project
 	url = git@github.com:sooof/node-api1-project.git
-[submodule "codeLearn/LS/Unit4/Web4.1/Day2/node-api2-guided"]
-	path = codeLearn/LS/Unit4/Web4.1/Day2/node-api2-guided
-	url = git@github.com:everestsh/node-api2-guided.git
-[submodule "codeLearn/LS/Unit4/Web4.1/Day3/node-api3-guided"]
-	path = codeLearn/LS/Unit4/Web4.1/Day3/node-api3-guided
-	url = git@github.com:everestsh/node-api3-guided.git
-[submodule "codeLearn/LS/Unit4/Web4.1/Day3/node-api3-project"]
-	path = codeLearn/LS/Unit4/Web4.1/Day3/node-api3-project
-	url = git@github.com:sooof/node-api3-project.git
 [submodule "codeLearn/LS/Unit4/Web4.1/Day4/webapi-iv-guided"]
 	path = codeLearn/LS/Unit4/Web4.1/Day4/webapi-iv-guided
 	url = git@github.com:everestsh/webapi-iv-guided.git
@@ -193,3 +184,27 @@
 [submodule "codeLearn/LS/Unit4/Web4.1/Day3/sooof-011222-U4W41D3-node-api3-project"]
 	path = codeLearn/LS/Unit4/Web4.1/Day3/sooof-011222-U4W41D3-node-api3-project
 	url = git@github.com:everestsh/sooof-011222-U4W41D3-node-api3-project.git
+[submodule "codeLearn/LS/Unit4/Web4.1/Day3/sooof-011222-U4W41D3-node-api3-guided"]
+	path = codeLearn/LS/Unit4/Web4.1/Day3/sooof-011222-U4W41D3-node-api3-guided
+	url = git@github.com:everestsh/sooof-011222-U4W41D3-node-api3-guided.git
+[submodule "codeLearn/LS/Unit3/WEB3.3/Day2/sooof-110921-U3W33D2-web-module-project-client-auth"]
+	path = codeLearn/LS/Unit3/WEB3.3/Day2/sooof-110921-U3W33D2-web-module-project-client-auth
+	url = git@github.com:everestsh/sooof-110921-U3W33D2-web-module-project-client-auth.git
+[submodule "codeLearn/LS/Unit4/Web4.1/Day4/sooof-011322-U4W41D4-node-api4-project"]
+	path = codeLearn/LS/Unit4/Web4.1/Day4/sooof-011322-U4W41D4-node-api4-project
+	url = git@github.com:everestsh/sooof-011322-U4W41D4-node-api4-project.git
+[submodule "codeLearn/LS/Unit4-50/Web4.1/Day4/sooof-021022-U4W41D4-50-webapi-iv-guided"]
+	path = codeLearn/LS/Unit4-50/Web4.1/Day4/sooof-021022-U4W41D4-50-webapi-iv-guided
+	url = git@github.com:everestsh/sooof-021022-U4W41D4-50-webapi-iv-guided.git
+[submodule "codeLearn/LS/Unit4-50/Web4.1/DaySprint/web-sprint-challenge-build-a-web-api"]
+	path = codeLearn/LS/Unit4-50/Web4.1/DaySprint/web-sprint-challenge-build-a-web-api
+	url = git@github.com:sooof/web-sprint-challenge-build-a-web-api.git
+[submodule "codeLearn/LS/Unit3/WEB3.3/Day2/sooof-110921-U3W33D2-web-guided-project-client-auth"]
+	path = codeLearn/LS/Unit3/WEB3.3/Day2/sooof-110921-U3W33D2-web-guided-project-client-auth
+	url = git@github.com:everestsh/sooof-110921-U3W33D2-web-guided-project-client-auth.git
+[submodule "codeLearn/LS/Unit2/WEB2.4/FT-African-Marketplace-2-Group/front-end"]
+	path = codeLearn/LS/Unit2/WEB2.4/FT-African-Marketplace-2-Group/front-end
+	url = git@github.com:FT-African-Marketplace-2-Group/front-end.git
+[submodule "codeLearn/LS/Unit1/WEB1.2/Day1/sooof-090621-U1W12D1-HTML-CSS-Responsive-Practice"]
+	path = codeLearn/LS/Unit1/WEB1.2/Day1/sooof-090621-U1W12D1-HTML-CSS-Responsive-Practice
+	url = git@github.com:everestsh/sooof-090621-U1W12D1-HTML-CSS-Responsive-Practice.git
