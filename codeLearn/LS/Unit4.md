@@ -59,103 +59,38 @@
 
     * [WEB4.2](<#>)
 
-     * [Day 1 -- 01-17-2022](<#>)
-     
-         * In Class
-            * Local (B: mjg)--- [sooof-011722-U4W42D1-node-db1-guided](<./Unit4/Web4.2/Day1/sooof-011722-U4W42D1-node-db1-guided/>)
-            * Github --- [sooof-011722-U4W42D1-node-db1-guided](<https://github.com/everestsh/sooof-011722-U4W42D1-node-db1-guided)
+     * [Day 1 -- ](<#>)
 
-            ```
-            git clone 	git@github.com:everestsh/sooof-011722-U4W42D1-node-db1-guided.git
-            ```
-            *   branch <Online> --- bloomtechObj1 ; bloomtechObj2 ; mjg
-
-            * Local (B: mjg)--- [webapi-i-challenge](<./Unit4/Web4.2/Day1/webapi-i-challenge/>)
-            * --- branch <Online> --- bOnlineObj3-D1
-            * Github --- [webapi-i-challenge/tree/mjg](<https://github.com/everestsh/webapi-i-challenge>)
-
-            ```
-            git clone git@github.com:everestsh/webapi-i-challenge.git
-            ``` 
-        * [HomeWork](<#>)
-            * Local (B: Mingjun-Geng)--- [sooof-011722-U4W42D1-node-db1-project](<./Unit4/Web4.2/Day1/sooof-011722-U4W42D1-node-db1-project/>)
-            * Github --- [sooof-011722-U4W42D1-node-db1-project](<https://github.com/everestsh/sooof-011722-U4W42D1-node-db1-project>)
-
-            ```
-            git clone git@github.com:everestsh/sooof-011722-U4W42D1-node-db1-project.git
-            ```
+         
      * [Day 2 -- 01-18-2022](<#>)
          * In Class
-            * Local (B: mjg)--- [sooof-011822-U4W42D2-node-db2-guided](<./Unit4/Web4.2/Day2/sooof-011822-U4W42D2-node-db2-guided/>)
-            * Github --- [sooof-011822-U4W42D2-node-db2-guided](<https://github.com/everestsh/sooof-011822-U4W42D2-node-db2-guided>)
 
-            ```
-            git clone git@github.com:everestsh/sooof-011822-U4W42D2-node-db2-guided.git
-            ```
-            * Local (B: mjg)--- [w](<>)
-            * Github --- [w](<>)
 
-            ```
-            git clone 
-            ``` 
-            * --- branch <Online> --- bOnlineObj1-D2 ; bOnlineObj4-D2
         * [HomeWork](<#>)
-            * Local (B: Mingjun-Geng)--- [sooof-011822-U4W42D2-node-db2-project](<./Unit4/Web4.2/Day2/sooof-011822-U4W42D2-node-db2-project/>)
-            * Github --- [sooof-011822-U4W42D2-node-db2-project](<https://github.com/everestsh/sooof-011822-U4W42D2-node-db2-projectt>)
 
-            ```
-            git clone git@github.com:everestsh/sooof-011822-U4W42D2-node-db2-project.git
-            ```
+
         
-     * [Day 3 -- 01-19-2022](<#>)
+     * [Day 3 -- ](<#>)
      
-         * In Class
-            * Local (B: mjg)--- [sooof-011922-U4W42D3-node-db3-guided](<./Unit4/Web4.2/Day3/sooof-011922-U4W42D3-node-db3-guided/>)
-            * Github --- [sooof-011922-U4W42D3-node-db3-guided](<https://github.com/everestsh/sooof-011922-U4W42D3-node-db3-guided>)
+        * In Class
 
-            ```
-            git clone git@github.com:everestsh/sooof-011922-U4W42D3-node-db3-guided.git
-            ```
-            *   branch <Online> --- bOnlineObj1-D3
-
-            * Local (B: mjg)--- [webapi-i-challenge](<./Unit4/Web4.1/Day3/webapi-i-challenge/>)
-            * Github --- [webapi-i-challenge/tree/mjg](<https://github.com/everestsh/webapi-i-challenge>)
-
-            ```
-            git clone git@github.com:everestsh/webapi-i-challenge.git
-            ``` 
         * [HomeWork](<#>)
-            * Local (B: Mingjun-Geng)--- [sooof-011922-U4W42D3-node-db3-project](<./Unit4/Web4.2/Day3/sooof-011922-U4W42D3-node-db3-project/>)
-            * Github --- [sooof-011922-U4W42D3-node-db3-project](<https://github.com/everestsh/sooof-011922-U4W42D3-node-db3-project>)
 
-            ```
-            git clone git@github.com:everestsh/sooof-011922-U4W42D3-node-db3-project.git
-            ```
+
+ 
         
      * [Day 4 -- 01-14-2022](<#>)
      
          * In Class
-            * Local (B: mjg)--- [sooof-012022-U4W42D4-node-db4-guided](<./Unit4/Web4.2/Day4/sooof-012022-U4W42D4-node-db4-guided/>)
-            * Github --- [sooof-012022-U4W42D4-node-db4-guided](<https://github.com/everestsh/sooof-012022-U4W42D4-node-db4-guided>)
+  
 
-            ```
-            git clone git@github.com:everestsh/sooof-012022-U4W42D4-node-db4-guided.git
-            ```
-            *   branch <Online> --- bOnlineObj2-D4; mj.g
+ 
         * [HomeWork](<#>)
-            * Local (B: Mingjun-Geng)--- [sooof-012022-U4W42D4-node-db4-project](<./Unit4/Web4.2/Day4/sooof-012022-U4W42D4-node-db4-project/>)
-            * Github --- [sooof-012022-U4W42D4-node-db4-project](<https://github.com/everestsh/sooof-012022-U4W42D4-node-db4-project>)
 
-            ```
-            git clone git@github.com:everestsh/sooof-012022-U4W42D4-node-db4-projectt.git
-            ```
+  
     
      * [Day 5 -- 01-15-2022](<#>)
      
         * [HomeWork](<#>)
-            * Local -- [web-sprint-challenge-adding-data-persistence](<./Unit4/Web4.2/DaySprint/web-sprint-challenge-adding-data-persistence/>)
-            * Github --- [web-sprint-challenge-adding-data-persistence](<https://github.com/sooof/web-sprint-challenge-adding-data-persistence>)
 
-            ```
-            git clone git@github.com:sooof/web-sprint-challenge-adding-data-persistence.git
-            ```
+
