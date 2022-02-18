@@ -148,9 +148,6 @@
 [submodule "codeLearn/LS/Unit3-w49/WEB3.3/DAY1/web-module-project-testing-react"]
 	path = codeLearn/LS/Unit3-w49/WEB3.3/DAY1/web-module-project-testing-react
 	url = git@github.com:sooof/web-module-project-testing-react.git
-[submodule "codeLearn/LS/Unit3/WEB3.3/Day2/web-module-project-client-auth"]
-	path = codeLearn/LS/Unit3/WEB3.3/Day2/web-module-project-client-auth
-	url = git@github.com:everestsh/web-module-project-client-auth.git
 [submodule "codeLearn/LS/Unit3-w49/WEB3.3/DAY2/web-module-project-client-auth"]
 	path = codeLearn/LS/Unit3-w49/WEB3.3/DAY2/web-module-project-client-auth
 	url = git@github.com:sooof/web-module-project-client-auth.git
@@ -208,3 +205,21 @@
 [submodule "codeLearn/LS/Unit1/WEB1.2/Day1/sooof-090621-U1W12D1-HTML-CSS-Responsive-Practice"]
 	path = codeLearn/LS/Unit1/WEB1.2/Day1/sooof-090621-U1W12D1-HTML-CSS-Responsive-Practice
 	url = git@github.com:everestsh/sooof-090621-U1W12D1-HTML-CSS-Responsive-Practice.git
+[submodule "codeLearn/LS/Unit1/WEB1.2/Day1/sooof-090621-U1W12D1-User-Interface-II"]
+	path = codeLearn/LS/Unit1/WEB1.2/Day1/sooof-090621-U1W12D1-User-Interface-II
+	url = git@github.com:everestsh/sooof-090621-U1W12D1-User-Interface-II.git
+[submodule "codeLearn/LS/Unit1/WEB1.2/Day2/sooof-090721-U1W12D2-Introduction-to-JavaScript"]
+	path = codeLearn/LS/Unit1/WEB1.2/Day2/sooof-090721-U1W12D2-Introduction-to-JavaScript
+	url = git@github.com:everestsh/sooof-090721-U1W12D2-Introduction-to-JavaScript.git
+[submodule "codeLearn/LS/Unit1/WEB1.3/Day2/sooof-091521-U1W14D2-Array-Methods-and-Callbacks"]
+	path = codeLearn/LS/Unit1/WEB1.3/Day2/sooof-091521-U1W14D2-Array-Methods-and-Callbacks
+	url = git@github.com:everestsh/sooof-091521-U1W14D2-Array-Methods-and-Callbacks.git
+[submodule "codeLearn/LS/Unit1/WEB1.3/Day2/sooof-091421-U1W13D2-Array-Methods-and-Callbacks"]
+	path = codeLearn/LS/Unit1/WEB1.3/Day2/sooof-091421-U1W13D2-Array-Methods-and-Callbacks
+	url = git@github.com:everestsh/sooof-091421-U1W13D2-Array-Methods-and-Callbacks.git
+[submodule "codeLearn/LS/Unit4/Web4.2/Day1/50/node-db1-project"]
+	path = codeLearn/LS/Unit4/Web4.2/Day1/50/node-db1-project
+	url = git@github.com:sooof/node-db1-project.git
+[submodule "codeLearn/LS/Unit4/Web4.2/Day4/50/node-db4-project"]
+	path = codeLearn/LS/Unit4/Web4.2/Day4/50/node-db4-project
+	url = git@github.com:sooof/node-db4-project.git

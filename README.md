@@ -28,3 +28,4 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 ```
 
 * [BloomTech](<./codeLearn/LS/BloomTech.md>)
+* [Web Core Interview](<./codeLearn/LS/Web-Core-Interview.md>)
