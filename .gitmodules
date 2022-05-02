@@ -220,6 +220,39 @@
 [submodule "codeLearn/LS/Unit4/Web4.2/Day1/50/node-db1-project"]
 	path = codeLearn/LS/Unit4/Web4.2/Day1/50/node-db1-project
 	url = git@github.com:sooof/node-db1-project.git
-[submodule "codeLearn/LS/Unit4/Web4.2/Day4/50/node-db4-project"]
-	path = codeLearn/LS/Unit4/Web4.2/Day4/50/node-db4-project
-	url = git@github.com:sooof/node-db4-project.git
+[submodule "codeLearn/LS/Unit4/Web4.2/DaySprint/50/web-sprint-challenge-adding-data-persistence"]
+	path = codeLearn/LS/Unit4/Web4.2/DaySprint/50/web-sprint-challenge-adding-data-persistence
+	url = git@github.com:sooof/web-sprint-challenge-adding-data-persistence.git
+[submodule "codeLearn/LS/Unit4/Web4.2/DaySprint/sooof-U4W42D5-web-sprint-challenge-adding-data-persistence"]
+	path = codeLearn/LS/Unit4/Web4.2/DaySprint/sooof-U4W42D5-web-sprint-challenge-adding-data-persistence
+	url = git@github.com:everestsh/sooof-U4W42D5-web-sprint-challenge-adding-data-persistence.git
+[submodule "codeLearn/LS/Unit4/Web4.3/Day1/50/node-auth1-project"]
+	path = codeLearn/LS/Unit4/Web4.3/Day1/50/node-auth1-project
+	url = git@github.com:sooof/node-auth1-project.git
+[submodule "codeLearn/LS/Unit4/Web4.3/Day2/50/node-auth2-project"]
+	path = codeLearn/LS/Unit4/Web4.3/Day2/50/node-auth2-project
+	url = git@github.com:sooof/node-auth2-project.git
+[submodule "codeLearn/LS/Unit4/Web4.3/Day3/50/node-testing1-project"]
+	path = codeLearn/LS/Unit4/Web4.3/Day3/50/node-testing1-project
+	url = git@github.com:sooof/node-testing1-project.git
+[submodule "codeLearn/LS/Unit4/Web4.1/DaySprint/50/web-sprint-challenge-build-a-web-api"]
+	path = codeLearn/LS/Unit4/Web4.1/DaySprint/50/web-sprint-challenge-build-a-web-api
+	url = git@github.com:sooof/web-sprint-challenge-build-a-web-api.git
+[submodule "codeLearn/LS/Unit2/WEB2.4/FT-African-Marketplace-2-Group/node-auth2-project"]
+	path = codeLearn/LS/Unit2/WEB2.4/FT-African-Marketplace-2-Group/node-auth2-project
+	url = git@github.com:sooof/node-auth2-project.git
+[submodule "codeLearn/LS/Unit4/Web4.3/Day4/50/node-testing2-project"]
+	path = codeLearn/LS/Unit4/Web4.3/Day4/50/node-testing2-project
+	url = git@github.com:sooof/node-testing2-project.git
+[submodule "codeLearn/LS/Unit4/Web4.3/DaySprint/50/web-sprint-challenge-authentication-and-testing"]
+	path = codeLearn/LS/Unit4/Web4.3/DaySprint/50/web-sprint-challenge-authentication-and-testing
+	url = git@github.com:sooof/web-sprint-challenge-authentication-and-testing.git
+[submodule "codeLearn/LS/Unit4/Web4.4/buildaweek-ftpotluckplanner-front-end"]
+	path = codeLearn/LS/Unit4/Web4.4/buildaweek-ftpotluckplanner-front-end
+	url = git@github.com:everestsh/buildaweek-ftpotluckplanner-front-end.git
+[submodule "codeLearn/LS/Unit4/Web4.4/buildaweek-ftpotluckplanner-back-end"]
+	path = codeLearn/LS/Unit4/Web4.4/buildaweek-ftpotluckplanner-back-end
+	url = git@github.com:everestsh/buildaweek-ftpotluckplanner-back-end.git
+[submodule "codeLearn/LS/Unit2/WEB2.3/Day4/sooof-web-guided-project-cypress-U2W23D4-101421"]
+	path = codeLearn/LS/Unit2/WEB2.3/Day4/sooof-web-guided-project-cypress-U2W23D4-101421
+	url = git@github.com:everestsh/sooof-web-guided-project-cypress-U2W23D4-101421.git

@@ -80,11 +80,7 @@
 
             *
          * Off ice Hour
-            * Local (B: mj.g)--- [Car-Sales](<./Unit3/WEB3.2/D2_test/Car-Sales/>)
-            * Github --- [Car-Sales/tree/mj.g](<https://github.com/sooof/Car-Sales>)
 
-
-            * [Custom Hooks office Hours vidio](<https://www.youtube.com/watch?v=shr7l58Weg0>)
         * [HomeWork](<#>)
 
 
