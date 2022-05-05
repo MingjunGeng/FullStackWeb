@@ -256,3 +256,9 @@
 [submodule "codeLearn/LS/Unit2/WEB2.3/Day4/sooof-web-guided-project-cypress-U2W23D4-101421"]
 	path = codeLearn/LS/Unit2/WEB2.3/Day4/sooof-web-guided-project-cypress-U2W23D4-101421
 	url = git@github.com:everestsh/sooof-web-guided-project-cypress-U2W23D4-101421.git
+[submodule "codeLearn/LS/Unit1/WEB1.1/DaySprint/web-Sprint-Challenge-User-Interface-and-Git-U1W11"]
+	path = codeLearn/LS/Unit1/WEB1.1/DaySprint/web-Sprint-Challenge-User-Interface-and-Git-U1W11
+	url = git@github.com:everestsh/web-Sprint-Challenge-User-Interface-and-Git-U1W11.git
+[submodule "codeLearn/LS/Unit1/WEB1.1/Day3/web-module-project-intro-css-U1W11D3"]
+	path = codeLearn/LS/Unit1/WEB1.1/Day3/web-module-project-intro-css-U1W11D3
+	url = git@github.com:everestsh/web-module-project-intro-css-U1W11D3.git
