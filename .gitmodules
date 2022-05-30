@@ -259,6 +259,3 @@
 [submodule "codeLearn/LS/Unit1/WEB1.1/DaySprint/web-Sprint-Challenge-User-Interface-and-Git-U1W11"]
 	path = codeLearn/LS/Unit1/WEB1.1/DaySprint/web-Sprint-Challenge-User-Interface-and-Git-U1W11
 	url = git@github.com:everestsh/web-Sprint-Challenge-User-Interface-and-Git-U1W11.git
-[submodule "codeLearn/LS/Unit1/WEB1.1/Day3/web-module-project-intro-css-U1W11D3"]
-	path = codeLearn/LS/Unit1/WEB1.1/Day3/web-module-project-intro-css-U1W11D3
-	url = git@github.com:everestsh/web-module-project-intro-css-U1W11D3.git
