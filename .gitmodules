@@ -79,12 +79,6 @@
 [submodule "codeLearn/LS/Unit3/WEB3.1/D1_work/web-module-project-class-components"]
 	path = codeLearn/LS/Unit3/WEB3.1/D1_work/web-module-project-class-components
 	url = git@github.com:everestsh/web-module-project-class-components.git
-[submodule "codeLearn/LS/Unit3/WEB3.1/D1_work/web-guided-project-class-components"]
-	path = codeLearn/LS/Unit3/WEB3.1/D1_work/web-guided-project-class-components
-	url = git@github.com:everestsh/web-guided-project-class-components.git
-[submodule "codeLearn/LS/Unit3-w49/WEB3.1/Day1/web-guided-project-class-components"]
-	path = codeLearn/LS/Unit3-w49/WEB3.1/Day1/web-guided-project-class-components
-	url = git@github.com:everestsh/web-guided-project-class-components.git
 [submodule "codeLearn/LS/Unit3-w49/WEB3.1/Day1/web-module-project-class-components"]
 	path = codeLearn/LS/Unit3-w49/WEB3.1/Day1/web-module-project-class-components
 	url = git@github.com:sooof/web-module-project-class-components.git
