@@ -6,7 +6,7 @@
      
          * In Class
             * Local (B: mj.g)--- [web-guided-project-class-components](<./Unit3/WEB3.1/D1_work/web-guided-project-class-components/>)
-            * Github --- [web-guided-project-class-components/tree/mj.g](<https://github.com/everestsh/web-guided-project-class-components/tree/mj.g>)
+            <!-- * Github --- [web-guided-project-class-components/tree/mj.g](<https://github.com/everestsh/web-guided-project-class-components/tree/mj.g>) -->
 
         * [HomeWork](<#>)
             * Local (B: Mingjun-Geng)--- [web-module-project-class-components](<./Unit3/WEB3.1/D1_work/web-module-project-class-components/>)
