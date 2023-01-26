@@ -88,12 +88,6 @@
 [submodule "codeLearn/LS/Unit3-w49/WEB3.1/DaySprint/web-sprint-challenge-advanced-react"]
 	path = codeLearn/LS/Unit3-w49/WEB3.1/DaySprint/web-sprint-challenge-advanced-react
 	url = git@github.com:sooof/web-sprint-challenge-advanced-react.git
-[submodule "codeLearn/LS/Unit3/WEB3.2/D1_test/web-module-project-reducer"]
-	path = codeLearn/LS/Unit3/WEB3.2/D1_test/web-module-project-reducer
-	url = git@github.com:everestsh/web-module-project-reducer.git
-[submodule "codeLearn/LS/Unit3-w49/WEB3.2/Day1/web-module-project-reducer"]
-	path = codeLearn/LS/Unit3-w49/WEB3.2/Day1/web-module-project-reducer
-	url = git@github.com:sooof/web-module-project-reducer.git
 [submodule "codeLearn/LS/Unit3/WEB3.2/D2_test/web-module-project-redux"]
 	path = codeLearn/LS/Unit3/WEB3.2/D2_test/web-module-project-redux
 	url = git@github.com:everestsh/web-module-project-redux.git

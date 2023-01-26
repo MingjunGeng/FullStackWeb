@@ -27,7 +27,6 @@
      * [Day 4 -- 12-00-2021](<#>)
 
         * [HomeWork](<#>)
-            * Local (B: mj.g)  --- [web-module-project-testing-web-apps](<./Unit3/WEB3.1/D4_work/web-module-project-testing-web-apps/>)
             * Github --- [web-module-project-testing-web-apps](<https://github.com/sooof/web-module-project-testing-web-apps>)
 
      
@@ -44,7 +43,6 @@
      * [Day 1 -- 11-01-2021](<#>)s
        
         * [HomeWork](<#>)
-            * Local (B: Mingjun-Geng)--- [web-module-project-reducer](<./Unit3/WEB3.2/D1_test/web-module-project-reducer/>)
             * Github --- [web-module-project-reducer](<https://github.com/everestsh/web-module-project-reducer>)
 
 
