@@ -13,12 +13,6 @@
 [submodule "codeLearn/LS/Unit3/WEB3.2/D4_test/tmp/web-guided-project-context"]
 	path = codeLearn/LS/Unit3/WEB3.2/D4_test/tmp/web-guided-project-context
 	url = git@github.com:sooof/web-guided-project-context.git
-[submodule "codeLearn/LS/Unit3/WEB3.1/D3_work/web-guided-project-custom-hook"]
-	path = codeLearn/LS/Unit3/WEB3.1/D3_work/web-guided-project-custom-hook
-	url = git@github.com:sooof/web-guided-project-custom-hook.git
-[submodule "codeLearn/LS/Unit3/WEB3.1/D4_work/web-guided-project-testing-web-apps"]
-	path = codeLearn/LS/Unit3/WEB3.1/D4_work/web-guided-project-testing-web-apps
-	url = git@github.com:sooof/web-guided-project-testing-web-apps.git
 [submodule "codeLearn/LS/Unit2/WEB2.3/Day1/web-guided-project-react-router"]
 	path = codeLearn/LS/Unit2/WEB2.3/Day1/web-guided-project-react-router
 	url = git@github.com:sooof/web-guided-project-react-router.git
@@ -76,27 +70,12 @@
 [submodule "codeLearn/LS/Unit2/WEB2.2/Day5_sprint/web-sprint-challenge-intro-to-react"]
 	path = codeLearn/LS/Unit2/WEB2.2/Day5_sprint/web-sprint-challenge-intro-to-react
 	url = git@github.com:sooof/web-sprint-challenge-intro-to-react.git
-[submodule "codeLearn/LS/Unit3/WEB3.1/D1_work/web-module-project-class-components"]
-	path = codeLearn/LS/Unit3/WEB3.1/D1_work/web-module-project-class-components
-	url = git@github.com:everestsh/web-module-project-class-components.git
-[submodule "codeLearn/LS/Unit3-w49/WEB3.1/Day1/web-module-project-class-components"]
-	path = codeLearn/LS/Unit3-w49/WEB3.1/Day1/web-module-project-class-components
-	url = git@github.com:sooof/web-module-project-class-components.git
-[submodule "codeLearn/LS/Unit3/WEB3.1/D2_work/web-guided-project-lifecycle"]
-	path = codeLearn/LS/Unit3/WEB3.1/D2_work/web-guided-project-lifecycle
-	url = git@github.com:sooof/web-guided-project-lifecycle.git
 [submodule "codeLearn/LS/Unit3/WEB3.1/D2_work/web-module-project-lifecycle"]
 	path = codeLearn/LS/Unit3/WEB3.1/D2_work/web-module-project-lifecycle
 	url = git@github.com:everestsh/web-module-project-lifecycle.git
 [submodule "codeLearn/LS/Unit3-w49/WEB3.1/Day2/web-module-project-lifecycle"]
 	path = codeLearn/LS/Unit3-w49/WEB3.1/Day2/web-module-project-lifecycle
 	url = git@github.com:sooof/web-module-project-lifecycle.git
-[submodule "codeLearn/LS/Unit3-w49/WEB3.1/Day3/web-module-project-custom-hook"]
-	path = codeLearn/LS/Unit3-w49/WEB3.1/Day3/web-module-project-custom-hook
-	url = git@github.com:sooof/web-module-project-custom-hook.git
-[submodule "codeLearn/LS/Unit3/WEB3.1/D3_work/web-module-project-custom-hook"]
-	path = codeLearn/LS/Unit3/WEB3.1/D3_work/web-module-project-custom-hook
-	url = git@github.com:everestsh/web-module-project-custom-hook.git
 [submodule "codeLearn/LS/Unit3-w49/WEB3.1/Day4/web-module-project-testing-web-apps"]
 	path = codeLearn/LS/Unit3-w49/WEB3.1/Day4/web-module-project-testing-web-apps
 	url = git@github.com:sooof/web-module-project-testing-web-apps.git
@@ -109,12 +88,6 @@
 [submodule "codeLearn/LS/Unit3-w49/WEB3.1/DaySprint/web-sprint-challenge-advanced-react"]
 	path = codeLearn/LS/Unit3-w49/WEB3.1/DaySprint/web-sprint-challenge-advanced-react
 	url = git@github.com:sooof/web-sprint-challenge-advanced-react.git
-[submodule "codeLearn/LS/Unit3/WEB3.2/D1_test/web-module-project-reducer"]
-	path = codeLearn/LS/Unit3/WEB3.2/D1_test/web-module-project-reducer
-	url = git@github.com:everestsh/web-module-project-reducer.git
-[submodule "codeLearn/LS/Unit3-w49/WEB3.2/Day1/web-module-project-reducer"]
-	path = codeLearn/LS/Unit3-w49/WEB3.2/Day1/web-module-project-reducer
-	url = git@github.com:sooof/web-module-project-reducer.git
 [submodule "codeLearn/LS/Unit3/WEB3.2/D2_test/web-module-project-redux"]
 	path = codeLearn/LS/Unit3/WEB3.2/D2_test/web-module-project-redux
 	url = git@github.com:everestsh/web-module-project-redux.git
